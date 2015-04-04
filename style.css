@@ -5,7 +5,7 @@ body
 { font:2em/3em "Ek Mukta", sans-serif; }
 
 a
-{ text-decoration:none; background:black; color:white; box-shadow: -1em 0 0 black, 1.25em 0 0 black; padding: 0.25em 0; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+{ text-decoration:none; background:black; color:white; box-shadow: -1em 0 0 black, 1.25em 0 0 black; padding: 0.25em 0; box-decoration-break:clone; }
 
 .post-wrapper
 { }
@@ -21,7 +21,7 @@ a
 { width:100%; position:absolute; top:100%; margin-top:-5em; padding:2em 3em 2em; box-sizing:border-box; }
 
 .words span 
-{ box-shadow: -1em 0 0 white, 1em 0 0 white; background:white; color:black; -webkit-box-decoration-break:clone; box-decoration-break:clone; padding:0.25em 0; margin-right:3em; }
+{ box-shadow: -1em 0 0 white, 1em 0 0 white; background:white; color:black; box-decoration-break:clone; padding:0.25em 0; margin-right:3em; display:inline; }
 
 .nav
 { display:inline; z-index:2; }
