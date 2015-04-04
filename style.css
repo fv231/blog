@@ -8,7 +8,7 @@ a
 { text-decoration:none; background:black; color:white; box-shadow: -1em 0 0 black, 1.25em 0 0 black; padding: 0.25em 0; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
 
 .post-wrapper
-{ position:relative; min-width:620px; }
+{ }
 
 .picture
 { }
