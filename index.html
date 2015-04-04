@@ -3,12 +3,12 @@ layout: default
 ---
 
 <div class="posts">
-   {% for post in site.posts limit:10 %}
+   {% for post in site.posts limit:1 %}
       <div class="post">         
          {{ post.content }}
       </div>
    {% endfor %}
    <p>
-      <a href="older/">Older</a>
+      <a href="archive/">Archive</a>
    </p>
 </div>

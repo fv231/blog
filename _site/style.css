@@ -2,31 +2,31 @@
 { border:0px; padding:0px; margin:0px; }
 
 body
-{ font:20px/30px "Ek Mukta", sans-serif; }
+{ font:20px/30px "Ek Mukta", sans-serif; background:black; }
 
 a
 { text-decoration:none; color:black; }
 
-.wrapper
-{ width:100%; max-width:700px; margin:60px auto; padding:0px 60px; box-sizing:border-box; }
-
-.header
+.post-wrapper
 { }
 
-.footer
-{ }
+.picture-bg
+{ width:100%; background:black; }
 
-.posts
-{ margin:60px 0px; }
+.picture
+{ width:100%; max-width:700px; margin:0px auto; padding:60px; box-sizing:border-box; padding-left:70px; }
 
-.post
-{ margin:60px 0px; }
+.picture img
+{ width:100%; border:2px solid white; margin-bottom:60px; margin-left:-10px; }
 
-.post p
-{ text-indent:30px; }
+.picture p 
+{ background:black; padding-right:10px; }
 
-.post p:nth-child(2)
-{ text-indent:0px; }
+.picture span 
+{ box-shadow: -10px 0px 0px white, 10px 0px 0px white; background:white; color:black; line-height:50px; box-decoration-break:clone; padding:2px 0px; }
 
-.post-title
-{ text-indent:0px !important; }
+.writing-bg
+{ width:100%; background:white; }
+
+.writing
+{ width:100%; max-width:700px; margin:0px auto; padding:60px; box-sizing:border-box; }
