@@ -4,7 +4,7 @@
 body
 { font:2em/2.5em "xPuritan", "Ubuntu", "Ek Mukta", sans-serif; }
 
-.words > a
+.words a
 { text-decoration:none; background:black; color:white; box-shadow: 0 0 0 .25em black; box-decoration-break:clone; margin:.25em; }
 
 .post-wrapper
@@ -27,4 +27,4 @@ body
 { display:inline; }
 
 .nav a
-{ text-decoration:none; box-shadow: 0 0 0 .25em black; background:black; color:white; box-decoration-break:clone; margin-right:1.25em; }
+{ text-decoration:none; box-shadow: 0 0 0 .25em black; background:black; color:white; box-decoration-break:clone; margin-right:1em; margin-left:0; }
