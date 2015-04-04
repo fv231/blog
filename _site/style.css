@@ -2,10 +2,10 @@
 { border:0px; padding:0px; margin:0px; }
 
 body
-{ font:2em/3em arial, "Roboto", "Ek Mukta", sans-serif; }
+{ font:2em/2.5em "Ubuntu", "Ek Mukta", sans-serif; }
 
 a
-{ text-decoration:none; background:black; color:white; box-shadow: 0 0 0 .25em black; box-decoration-break:clone; }
+{ text-decoration:none; background:black; color:white; box-shadow: 0 0 0 .25em black; box-decoration-break:clone; margin:.25em; }
 
 .post-wrapper
 { }
@@ -18,7 +18,7 @@ a
 
 
 .words
-{ width:100%; position:absolute; top:100%; margin-top:-5em; padding:2em 3em 2em; box-sizing:border-box; }
+{ width:100%; position:absolute; top:100%; margin-top:-5em; padding:2.5em; box-sizing:border-box; }
 
 .words > span 
 { box-shadow: 0 0 0 .25em white; background:white; color:black; box-decoration-break:clone; margin-right:1.25em; }
@@ -27,4 +27,4 @@ a
 { display:inline; }
 
 .nav span
-{ display:inline-block; margin-right:1em; }
+{ box-shadow: 0 0 0 .25em black; background:black; color:black; box-decoration-break:clone; margin-right:1.25em; }
