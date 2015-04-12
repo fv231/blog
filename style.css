@@ -47,7 +47,7 @@ p + p
 @media ( max-width:600px ) {
 
    .words
-   { padding:75px 45px; }
+   { padding:75px 45px 70px; }
 
    .words p 
    { font-size:20px; line-height:30px; }
