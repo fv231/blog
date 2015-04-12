@@ -1,0 +1,45 @@
+/*** General *********/
+
+*
+{ border:0px; padding:0px; margin:0px; }
+
+body, html 
+{ height:100%; }
+
+body
+{ font:24px/32px "Ek Mukta", sans-serif; }
+
+a 
+{ text-decoration:none; color:#aaa; }
+
+a:hover
+{ color:white; }
+
+p + p
+{ margin-top:1.6em; }
+
+/*** Layout *********/
+
+.picture
+{ position:relative; height:100%; background-size:cover; background-position:center top; background-repeat:no-repeat; }
+
+.words
+{ position:relative; top:0px; margin:auto; padding:225px 100px 175px; max-width:750px; font:30px/45px georgia, serif; }
+
+.words p:first-child:first-letter
+{ float:left; font-size:240px; font-family: "Bilbo Swash Caps", georgia, serif; color:black; margin-left:-48px; overflow:visible; }
+
+.footer
+{ position:relative; text-transform:uppercase; padding:200px 0px 150px; background-color:black; font:32px 'Julius Sans One', sans-serif; color:#999; letter-spacing:4px; text-align:center; }
+
+.footer a               
+{ text-decoration:none; color:#999; }
+
+.footer li
+{ list-style:none; margin-bottom:20px; }
+
+.footer a:hover, a:active  
+{ color:white; }
+
+.footer #sup
+{ padding-top:30px; }
