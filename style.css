@@ -24,7 +24,7 @@ p + p
 { position:relative; top:0px; margin:auto; padding:225px 100px 175px; max-width:750px; font:30px/45px georgia, serif; }
 
 .words p:first-child:first-letter
-{ float:left; font-size:240px; font-family: "Bilbo Swash Caps", georgia, serif; color:black; margin-left:-48px; }
+{  float:left; display:block; font-size:240px; font-family: "Bilbo Swash Caps", georgia, serif; color:black; margin-left:-48px; }
 
 .footer
 { position:relative; text-transform:uppercase; padding:200px 0px 150px; background-color:black; font:32px 'Julius Sans One', sans-serif; color:#999; letter-spacing:4px; text-align:center; }
@@ -44,7 +44,7 @@ p + p
 @media ( max-width:480px ) {
 
    .words
-   { padding:100px 50px 75px; font-size:25px; line-height:35px; }
+   { padding:100px 50px 75px; font-size:20px; line-height:30px; }
 
    .words p:first-child:first-letter
    { font-size:140px; margin-left:-24px; }  
