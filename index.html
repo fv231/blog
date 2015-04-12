@@ -2,10 +2,15 @@
 layout: default
 ---
 
-<div class="posts">
-   {% for post in site.posts limit:1 %}
-      <div class="post">         
-         {{ post.content }} 
-      </div>
-   {% endfor %}
+{% for post in site.posts limit:1 %}     
+   {{ post.content }} 
+{% endfor %}
+
+<div class="footer"> 
+   <p>
+      <a href="#">Previous</a>
+      <a href="#">Next</a>
+      <a href="#">Home</a>
+      <a href="#">@withrye</a>
+   </p>
 </div>
