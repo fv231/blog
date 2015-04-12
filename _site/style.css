@@ -1,8 +1,13 @@
+/*** General *********/
+
 *
 { border:0px; padding:0px; margin:0px; }
 
+body, html 
+{ height:100%; }
+
 body
-{ font:24px/32px "Ek Mukta", sans-serif; background:black; }
+{ font:24px/32px "Ek Mukta", sans-serif; }
 
 a 
 { text-decoration:none; color:#aaa; }
@@ -10,24 +15,31 @@ a
 a:hover
 { color:white; }
 
-.picture
-{ display:block; }
+p + p
+{ margin-top:1.6em; }
 
-.picture img
-{ display:block; width:100%; }
+/*** Layout *********/
+
+.picture
+{ position:relative; height:100%; background-size:cover; background-position:center top; background-repeat:no-repeat; }
 
 .words
-{ position:relative; width:100%; box-sizing:border-box; background:white; padding:24px 24px 0px; }
-
-.words p
-{ padding-bottom:24px; width:100%; max-width:696px; background:white; margin:0 auto;box-sizing:border-box; }
+{ position:relative; top:0px; margin:auto; padding:225px 100px 175px; max-width:750px; font:30px/45px georgia, serif; }
 
 .words p:first-child:first-letter
-{ float:left; display:inline-block; font-size:240px; font-family: "Bilbo Swash Caps", georgia, serif; color:black; margin-left:-48px; overflow:visible; }
+{ float:left; font-size:240px; font-family: "Bilbo Swash Caps", georgia, serif; color:black; margin-left:-48px; overflow:visible; }
 
 .footer
-{ position:relative; width:100%; background:black; color:white; height:240px; padding:24px; box-sizing:border-box; }
+{ position:relative; text-transform:uppercase; padding:200px 0px 150px; background-color:black; font:32px 'Julius Sans One', sans-serif; color:#999; letter-spacing:4px; text-align:center; }
 
-.footer p
-{ width:100%; max-width:696px; margin:0 auto; box-sizing:border-box; }
+.footer a               
+{ text-decoration:none; color:#999; }
 
+.footer li
+{ list-style:none; margin-bottom:20px; }
+
+.footer a:hover, a:active  
+{ color:white; }
+
+.footer #sup
+{ padding-top:30px; }

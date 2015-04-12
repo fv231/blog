@@ -2,8 +2,7 @@
 layout: default
 ---
 
-<div class="picture">
-   <img src="{{site.baseurl}}/images/picture{{page.title}}.jpg" />
+<div class="picture" style="background-image:url({{site.baseurl}}/images/picture{{page.title}}.jpg);">
 </div>
 
 <div class="words">
@@ -11,14 +10,16 @@ layout: default
 </div>
 
 <div class="footer"> 
-  <p>
+  <ul>
      {% if page.previous %} 
-       <a class="prev" href="{{site.baseurl}}{{page.previous.url}}">Previous</a> 
+       <li><a href="{{site.baseurl}}{{page.previous.url}}">Previous</a></li> 
      {% endif %} 
      {% if page.next %} 
-       <a class="next" href="{{site.baseurl}}{{page.next.url}}">Next</a> 
+       <li><a href="{{site.baseurl}}{{page.next.url}}">Next</a></li>
      {% endif %} 
-      <a href="{{site.baseurl}}/">Home</a>
-      <a href="http://twitter.com/withrye">@withrye</a>
-   </p>
+      <li><a href="{{site.baseurl}}/1">First</a></li>
+      <li><a href="{{site.baseurl}}/">Home</a></li>
+      <li><a href="http://twitter.com/withrye">@withrye</a></li>
+      <li id="sup"><img src="{{site.baseurl}}/images/gomez.gif" title="Oh hai" /></li>
+   </ul>
 </div>
