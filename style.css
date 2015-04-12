@@ -44,13 +44,13 @@ p + p
 @media ( max-width:600px ) {
 
    .words
-   { padding:75px 45px 45px; font-size:20px; line-height:30px; }
+   { padding:75px 45px; font-size:20px; line-height:30px; }
 
    .words p:first-child:first-letter
    { font-size:120px; margin-left:-24px; }  
 
    .footer
-   { font-size:28px; padding:65px 0px 35px; }
+   { font-size:28px; padding:85px 0px 55px; }
 
    .footer #sup
    { padding-top:20px; }
