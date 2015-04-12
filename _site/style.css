@@ -2,26 +2,32 @@
 { border:0px; padding:0px; margin:0px; }
 
 body
-{ font:24px/32px "Ek Mukta", sans-serif; }
+{ font:24px/32px "Ek Mukta", sans-serif; background:black; }
 
 a 
-{ text-decoration:none; color:white; }
+{ text-decoration:none; color:#aaa; }
+
+a:hover
+{ color:white; }
+
+.picture
+{ display:block; }
 
 .picture img
 { display:block; width:100%; }
 
 .words
-{ position:relative; width:100%; max-width:696px; box-sizing:border-box; padding:24px 24px 0px; margin:0 auto; }
+{ position:relative; width:100%; box-sizing:border-box; background:white; padding:24px 24px 0px; }
 
 .words p
-{ padding-bottom:32px; }
+{ padding-bottom:24px; width:100%; max-width:696px; background:white; margin:0 auto;box-sizing:border-box; }
 
 .words p:first-child:first-letter
 { float:left; display:inline-block; font-size:240px; font-family: "Bilbo Swash Caps", georgia, serif; color:black; margin-left:-48px; overflow:visible; }
 
 .footer
-{ position:relative; width:100%; background:black; height:240px; color:white; }
+{ position:relative; width:100%; background:black; color:white; height:240px; padding:24px; box-sizing:border-box; }
 
 .footer p
-{ width:100%; max-width:696px; padding:24px; margin:0 auto; box-sizing:border-box; }
+{ width:100%; max-width:696px; margin:0 auto; box-sizing:border-box; }
 
