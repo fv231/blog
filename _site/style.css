@@ -4,7 +4,7 @@
 { border:0px; padding:0px; margin:0px; }
 
 body, html 
-{ height:100%; }
+{ height:100%; background:black; }
 
 a 
 { text-decoration:none; color:#aaa; }
@@ -18,16 +18,19 @@ p + p
 /*** Layout *********/
 
 .picture
-{ position:relative; height:100%; background-size:cover; background-position:center top; background-repeat:no-repeat; }
+{ position:relative; height:100%; background-size:cover; background-position:center center; background-repeat:no-repeat; }
 
 .words
-{ position:relative; top:0px; margin:auto; padding:225px 100px 175px; max-width:750px; font:30px/45px georgia, serif; }
+{ position:relative; top:0px; padding:225px 100px 175px; width:100%; background:white; box-sizing:border-box; }
+
+.words p
+{ margin-left:auto; margin-right:auto; max-width:750px; font:30px/45px georgia, serif; }
 
 .words p:first-child:first-letter
 {  float:left; display:block; font-size:240px; font-family: "Bilbo Swash Caps", georgia, serif; color:black; margin-left:-48px; }
 
 .footer
-{ position:relative; text-transform:uppercase; padding:200px 0px 150px; background-color:black; font:32px 'Julius Sans One', sans-serif; color:#999; letter-spacing:4px; text-align:center; }
+{ position:relative; text-transform:uppercase; padding:200px 0px 150px; background-color:black; font:32px 'Julius Sans One', sans-serif; color:#999; letter-spacing:4px; text-align:center; min-height:100%; box-sizing:border-box; }
 
 .footer a               
 { text-decoration:none; color:#999; }
@@ -44,7 +47,10 @@ p + p
 @media ( max-width:600px ) {
 
    .words
-   { padding:75px 45px; font-size:20px; line-height:30px; }
+   { padding:75px 45px; }
+
+   .words p 
+   { font-size:20px; line-height:30px; }
 
    .words p:first-child:first-letter
    { font-size:120px; margin-left:-24px; }  
