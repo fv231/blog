@@ -2,28 +2,25 @@
 { border:0px; padding:0px; margin:0px; }
 
 body
-{ font:24px/32px "xUbuntu", "Ek Mukta", sans-serif; }
+{ font:24px/32px "Ek Mukta", sans-serif; }
 
 a 
 { text-decoration:none; color:white; }
-
-.picture
-{ position:relative; width:100%; }
 
 .picture img
 { display:block; width:100%; }
 
 .words
-{ position:relative; width:100%; max-width:696px; xbox-sizing:border-box; padding:24px 24px 0px; margin:0 auto; }
+{ position:relative; width:100%; max-width:696px; box-sizing:border-box; padding:24px 24px 0px; margin:0 auto; }
 
 .words p
-{ padding-bottom:24px; }
+{ padding-bottom:32px; }
 
 .words p:first-child:first-letter
-{ float:left; display:inline-block; font-size:240px; font-family: "Bilbo Swash Caps", georgia, serif; color:black; margin-left:-48px; }
+{ float:left; display:inline-block; font-size:240px; font-family: "Bilbo Swash Caps", georgia, serif; color:black; margin-left:-48px; overflow:visible; }
 
 .footer
-{ position:relative; width:100%; background:black; height:480px; color:white; }
+{ position:relative; width:100%; background:black; height:240px; color:white; }
 
 .footer p
 { width:100%; max-width:696px; padding:24px; margin:0 auto; box-sizing:border-box; }

@@ -3,14 +3,17 @@ layout: default
 ---
 
 {% for post in site.posts limit:1 %}     
+   <div class="picture">
+      <img src="/images/picture{{post.title}}.jpg" />
+   </div>   
    {{ post.content }} 
+   <div class="footer"> 
+     <p>
+         <a href="{{post.previous.url}}">Previous</a> 
+         <a href="/">Home</a>
+         <a href="http://twitter.com/withrye">@withrye</a>
+      </p>
+   </div>
 {% endfor %}
 
-<div class="footer"> 
-   <p>
-      <a href="#">Previous</a>
-      <a href="#">Next</a>
-      <a href="#">Home</a>
-      <a href="#">@withrye</a>
-   </p>
-</div>
+
