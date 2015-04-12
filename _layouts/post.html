@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="picture">
-   <img src="/images/picture{{page.title}}.jpg" />
+   <img src="{{site.baseurl}}/images/picture{{page.title}}.jpg" />
 </div>
 
 {{ content }}
@@ -11,12 +11,12 @@ layout: default
 <div class="footer"> 
   <p>
      {% if page.previous %} 
-       <a class="prev" href="{{page.previous.url}}">Previous</a> 
+       <a class="prev" href="{{site.baseurl}}{{page.previous.url}}">Previous</a> 
      {% endif %} 
      {% if page.next %} 
-       <a class="next" href="{{page.next.url}}">Next</a> 
+       <a class="next" href="{{site.baseurl}}{{page.next.url}}">Next</a> 
      {% endif %} 
-      <a href="/">Home</a>
+      <a href="{{site.baseurl}}/">Home</a>
       <a href="http://twitter.com/withrye">@withrye</a>
    </p>
 </div>
