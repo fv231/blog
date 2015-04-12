@@ -41,7 +41,7 @@ p + p
 .footer #sup
 { padding-top:30px; }
 
-@media ( max-width:480px ) {
+@media ( max-width:600px ) {
 
    .words
    { padding:75px 45px 45px; font-size:20px; line-height:30px; }
