@@ -1,6 +1,6 @@
 title: withrye
 email: withrye@gmail.com
 description: withrye
-baseurl: "/withrye"
-url: "http://withrye2.github.io/"
+baseurl: ""
+url: ""
 permalink: /:title
