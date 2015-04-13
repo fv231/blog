@@ -4,7 +4,7 @@ layout: default
 
 {% for post in site.posts limit:1 %}     
    
-   <div class="picture" style="background-image:url({{site.baseurl}}/images/bg{{post.title}}.jpg);">
+   <div class="picture" style="background-image:url(/images/bg{{post.title}}.jpg);">
    </div>   
    
    <div class="words">
@@ -13,11 +13,11 @@ layout: default
    
    <div class="footer"> 
      <ul>
-         <li><a href="{{site.baseurl}}{{post.previous.url}}">Previous</a></li>      
-         <li><a href="{{site.baseurl}}/1">First</a></li>
-         <li><a href="{{site.baseurl}}/">Home</a></li>
+         <li><a href="{{post.previous.url}}">Previous</a></li>      
+         <li><a href="/1">First</a></li>
+         <li><a href="/">Home</a></li>
          <li><a href="http://twitter.com/withrye">@withrye</a></li>
-         <li id="sup"><img src="{{site.baseurl}}/images/gomez.gif" title="Oh hai" /></li>
+         <li id="sup"><img src="/images/gomez.gif" title="Oh hai" /></li>
       </ul>
    </div>
 
