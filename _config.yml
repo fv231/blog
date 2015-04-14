@@ -4,3 +4,10 @@ description: withrye
 baseurl: ""
 url: ""
 permalink: /:title
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
