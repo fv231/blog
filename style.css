@@ -9,9 +9,6 @@ body, html
 a 
 { text-decoration:none; color:black; }
 
-a:hover
-{ color:black; }
-
 p + p
 { margin-top:30px; }
 
