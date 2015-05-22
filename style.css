@@ -35,7 +35,7 @@ p + p
 .footer li
 { list-style:none; margin-bottom:20px; }
 
-.footer a:hover, a:active  
+.footer a:hover, .footer a:active  
 { color:white; }
 
 .footer #sup
