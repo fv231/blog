@@ -7,10 +7,10 @@ body, html
 { height:100%; background:black; }
 
 a 
-{ text-decoration:none; color:#aaa; }
+{ text-decoration:none; color:black; }
 
 a:hover
-{ color:white; }
+{ color:black; }
 
 p + p
 { margin-top:30px; }
