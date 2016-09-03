@@ -1,11 +1,20 @@
 *
-{ border:0; padding:0; margin:0; box-sizing:border-box; }
+{ border:0; padding:0; margin:0; }
 
 a
 { text-decoration:none; color:black; }
+
+img
+{ width:100%; }
+
+.header
+{ margin-top:32px; }
+
+.footer
+{ margin-bottom:32px; }
 
 .post p
 { margin:40px 0; }
 
 .wrapper
-{ max-width:800px; margin:auto; background:white; padding:40px; font:32px/40px georgia, serif; }
+{ max-width:600px; margin:auto; background:white; padding:40px; font:32px/40px georgia, serif; }

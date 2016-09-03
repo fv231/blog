@@ -8,10 +8,11 @@ layout: default
       {{ post.content }}
    </div>
 
-   <p><a href="{{post.previous.url}}">Previous</a></p>
-   <p><a href="/1">First</a></p>
-   <p><a href="/">Latest</a></p>
-   <p><a href="/?" id="random">Random</a></p>
-   <p><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></p>
+   <div class="footer">
+     <p><a href="{{post.previous.url}}">Previous</a></p>
+     <p><a href="/1">First</a></p>
+     <p><a href="/?" id="random">Random</a></p>
+     <p><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></p>
+   </div>
 
 {% endfor %}
