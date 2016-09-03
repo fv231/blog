@@ -10,25 +10,19 @@
 
   <script>
     window.onload = function() {
-
       var random = document.getElementById('random');
-
-
       if (random.addEventListener) {
-
         random.addEventListener('click', function(evt) {
             evt.preventDefault();
             window.location = '/' + (Math.ceil(Math.random() * 110));
         }, false);
       }
       else {
-        random.attachEvent('onclick', function() {
+        random.attachEvent('onclick', function(evt) {
+            evt.preventDefault();
             window.location = '/' + (Math.ceil(Math.random() * 110));
         });
       }
-
-
-
     }
   </script>
 
@@ -37,11 +31,9 @@
 <body>
 
   <div class="wrapper">
-
     <div class="header">
       <a href="/">withrye</a>
     </div>
-
     <div class="post">
   <p>I think I’m regressing. It’s been pretty downward sloping the past few years. Becoming more read-only. Pass-through. Things peaked around 2011 I think (in recent history, I mean, not to be all dramatic or anything). That was when I had my studio, a really low-stress job, could bike to work, had game night, people hadn’t moved away yet, and bunch of other stuff I didn’t appreciate as much as I should have at the time. I take that back. I think I did know how great things were as they were happening. I couldn’t stand the thought of stagnation though, and so changed things for the sake of changing things.</p>
 
@@ -56,18 +48,27 @@
 </div>
 
 <div class="footer">
+
   
     <p><a href="/85">Previous</a></p>
   
+
   
     <p><a href="/87">Next</a></p>
   
-  <p><a href="/1">First</a></p>
-  <p><a href="/">Latest</a></p>
+
+  
+    <p><a href="/1">First</a></p>
+  
+
+  
+    <p><a href="/110">Latest</a></p>
+  
+
   <p><a href="/?" id="random">Random</a></p>
   <p><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></p>
-</div>
 
+</div>
 
   </div>
 

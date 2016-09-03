@@ -10,25 +10,19 @@
 
   <script>
     window.onload = function() {
-
       var random = document.getElementById('random');
-
-
       if (random.addEventListener) {
-
         random.addEventListener('click', function(evt) {
             evt.preventDefault();
             window.location = '/' + (Math.ceil(Math.random() * 110));
         }, false);
       }
       else {
-        random.attachEvent('onclick', function() {
+        random.attachEvent('onclick', function(evt) {
+            evt.preventDefault();
             window.location = '/' + (Math.ceil(Math.random() * 110));
         });
       }
-
-
-
     }
   </script>
 
@@ -37,11 +31,9 @@
 <body>
 
   <div class="wrapper">
-
     <div class="header">
       <a href="/">withrye</a>
     </div>
-
     <div class="post">
   <p>Game night Tuesdays are actually a thing now! They exist, and better yet, <i>persist</i>—it’s got some legs. I’m trying to spread the word and get more sucked into the swirling whirlpool of fun.</p>
 
@@ -52,18 +44,27 @@
 </div>
 
 <div class="footer">
+
   
     <p><a href="/36">Previous</a></p>
   
+
   
     <p><a href="/38">Next</a></p>
   
-  <p><a href="/1">First</a></p>
-  <p><a href="/">Latest</a></p>
+
+  
+    <p><a href="/1">First</a></p>
+  
+
+  
+    <p><a href="/110">Latest</a></p>
+  
+
   <p><a href="/?" id="random">Random</a></p>
   <p><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></p>
-</div>
 
+</div>
 
   </div>
 

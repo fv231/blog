@@ -10,25 +10,19 @@
 
   <script>
     window.onload = function() {
-
       var random = document.getElementById('random');
-
-
       if (random.addEventListener) {
-
         random.addEventListener('click', function(evt) {
             evt.preventDefault();
             window.location = '/' + (Math.ceil(Math.random() * 110));
         }, false);
       }
       else {
-        random.attachEvent('onclick', function() {
+        random.attachEvent('onclick', function(evt) {
+            evt.preventDefault();
             window.location = '/' + (Math.ceil(Math.random() * 110));
         });
       }
-
-
-
     }
   </script>
 
@@ -37,11 +31,9 @@
 <body>
 
   <div class="wrapper">
-
     <div class="header">
       <a href="/">withrye</a>
     </div>
-
     <div class="post">
   <p>The king sat on his throne in front of a long line of pastry chefs and dessert masters, each bearing their greatest creations for the annual tasting. One by one, scrumptious sweets and delicate delicacies went down the king’s gullet, and one by one, he summarily dismissed each chef.</p>
 
@@ -68,18 +60,27 @@
 </div>
 
 <div class="footer">
+
   
     <p><a href="/95">Previous</a></p>
   
+
   
     <p><a href="/97">Next</a></p>
   
-  <p><a href="/1">First</a></p>
-  <p><a href="/">Latest</a></p>
+
+  
+    <p><a href="/1">First</a></p>
+  
+
+  
+    <p><a href="/110">Latest</a></p>
+  
+
   <p><a href="/?" id="random">Random</a></p>
   <p><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></p>
-</div>
 
+</div>
 
   </div>
 

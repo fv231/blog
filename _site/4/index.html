@@ -10,25 +10,19 @@
 
   <script>
     window.onload = function() {
-
       var random = document.getElementById('random');
-
-
       if (random.addEventListener) {
-
         random.addEventListener('click', function(evt) {
             evt.preventDefault();
             window.location = '/' + (Math.ceil(Math.random() * 110));
         }, false);
       }
       else {
-        random.attachEvent('onclick', function() {
+        random.attachEvent('onclick', function(evt) {
+            evt.preventDefault();
             window.location = '/' + (Math.ceil(Math.random() * 110));
         });
       }
-
-
-
     }
   </script>
 
@@ -37,11 +31,9 @@
 <body>
 
   <div class="wrapper">
-
     <div class="header">
       <a href="/">withrye</a>
     </div>
-
     <div class="post">
   <p>I bought a lotto ticket today, at the gas station. I began thinking of all the cool things I can do if I win. Just doing that, the fantasizing, is totally worth the $1. Like, the logistics of sorting through all my material desires and prioritizing luxuries is so much fun. What color Mini Cooper should I buy first, red or green? Delightful! And I like sorting stuff to begin with. Later, I’d forget about my ticket, and get a nice little jot of surprise once I see it in my wallet again, and remember, hey, yeah, I could be a millionaire lol. It’s funny how much entertainment I can extract from this.</p>
 
@@ -50,18 +42,27 @@
 </div>
 
 <div class="footer">
+
   
     <p><a href="/3">Previous</a></p>
   
+
   
     <p><a href="/5">Next</a></p>
   
-  <p><a href="/1">First</a></p>
-  <p><a href="/">Latest</a></p>
+
+  
+    <p><a href="/1">First</a></p>
+  
+
+  
+    <p><a href="/110">Latest</a></p>
+  
+
   <p><a href="/?" id="random">Random</a></p>
   <p><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></p>
-</div>
 
+</div>
 
   </div>
 

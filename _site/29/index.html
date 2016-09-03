@@ -10,25 +10,19 @@
 
   <script>
     window.onload = function() {
-
       var random = document.getElementById('random');
-
-
       if (random.addEventListener) {
-
         random.addEventListener('click', function(evt) {
             evt.preventDefault();
             window.location = '/' + (Math.ceil(Math.random() * 110));
         }, false);
       }
       else {
-        random.attachEvent('onclick', function() {
+        random.attachEvent('onclick', function(evt) {
+            evt.preventDefault();
             window.location = '/' + (Math.ceil(Math.random() * 110));
         });
       }
-
-
-
     }
   </script>
 
@@ -37,29 +31,36 @@
 <body>
 
   <div class="wrapper">
-
     <div class="header">
       <a href="/">withrye</a>
     </div>
-
     <div class="post">
   <p>One night, I was so lost in a dream, I jotted awake in a raw blue dawn not knowing where I was. I looked around slowly, stricken, without recognition at the surreal scene that was my apartment. My eyes jerked around, and at last alighted on my poster of the Great Wave off Kanagawa. It anchored me then, and I felt so safe. I lay back and slept.</p>
 
 </div>
 
 <div class="footer">
+
   
     <p><a href="/28">Previous</a></p>
   
+
   
     <p><a href="/30">Next</a></p>
   
-  <p><a href="/1">First</a></p>
-  <p><a href="/">Latest</a></p>
+
+  
+    <p><a href="/1">First</a></p>
+  
+
+  
+    <p><a href="/110">Latest</a></p>
+  
+
   <p><a href="/?" id="random">Random</a></p>
   <p><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></p>
-</div>
 
+</div>
 
   </div>
 

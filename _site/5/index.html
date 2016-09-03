@@ -10,25 +10,19 @@
 
   <script>
     window.onload = function() {
-
       var random = document.getElementById('random');
-
-
       if (random.addEventListener) {
-
         random.addEventListener('click', function(evt) {
             evt.preventDefault();
             window.location = '/' + (Math.ceil(Math.random() * 110));
         }, false);
       }
       else {
-        random.attachEvent('onclick', function() {
+        random.attachEvent('onclick', function(evt) {
+            evt.preventDefault();
             window.location = '/' + (Math.ceil(Math.random() * 110));
         });
       }
-
-
-
     }
   </script>
 
@@ -37,11 +31,9 @@
 <body>
 
   <div class="wrapper">
-
     <div class="header">
       <a href="/">withrye</a>
     </div>
-
     <div class="post">
   <p>I saw Mono at Slim’s a few hours ago. It was sublime. For the past week, I’ve been listening to their songs with headphones on the bus, trying hard to restrain myself from swaying or nodding my head too conspicuously, and watching their concert videos and footage on YouTube, and just totally getting all psyched for the show. There was one song in particular I was looking forward to, needed to see: the last song on their latest album, and their finale, Everlasting Light. They do this really cool maneuver at the climax where the bass and both guitar players all turn toward the drummer behind them and just rock hard to the end, facing and playing for each other in a circle as a band, with the audience made truly only a witness to their music.</p>
 
@@ -50,18 +42,27 @@
 </div>
 
 <div class="footer">
+
   
     <p><a href="/4">Previous</a></p>
   
+
   
     <p><a href="/6">Next</a></p>
   
-  <p><a href="/1">First</a></p>
-  <p><a href="/">Latest</a></p>
+
+  
+    <p><a href="/1">First</a></p>
+  
+
+  
+    <p><a href="/110">Latest</a></p>
+  
+
   <p><a href="/?" id="random">Random</a></p>
   <p><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></p>
-</div>
 
+</div>
 
   </div>
 

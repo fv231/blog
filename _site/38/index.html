@@ -10,25 +10,19 @@
 
   <script>
     window.onload = function() {
-
       var random = document.getElementById('random');
-
-
       if (random.addEventListener) {
-
         random.addEventListener('click', function(evt) {
             evt.preventDefault();
             window.location = '/' + (Math.ceil(Math.random() * 110));
         }, false);
       }
       else {
-        random.attachEvent('onclick', function() {
+        random.attachEvent('onclick', function(evt) {
+            evt.preventDefault();
             window.location = '/' + (Math.ceil(Math.random() * 110));
         });
       }
-
-
-
     }
   </script>
 
@@ -37,11 +31,9 @@
 <body>
 
   <div class="wrapper">
-
     <div class="header">
       <a href="/">withrye</a>
     </div>
-
     <div class="post">
   <p>Having children seems to be a requirement for a meaningful life. You can be the crappiest person, but as long as you have a kid, you are redeemed. You can be a hella rich, good-looking, profoundly generous and charitable <i>genius</i> but you will mean less, in the end, if you don’t have children. You would be considered incomplete if not suspect. Something must be wrong, you’re missing some organs, <i>something</i> must have derailed you.</p>
 
@@ -54,18 +46,27 @@
 </div>
 
 <div class="footer">
+
   
     <p><a href="/37">Previous</a></p>
   
+
   
     <p><a href="/39">Next</a></p>
   
-  <p><a href="/1">First</a></p>
-  <p><a href="/">Latest</a></p>
+
+  
+    <p><a href="/1">First</a></p>
+  
+
+  
+    <p><a href="/110">Latest</a></p>
+  
+
   <p><a href="/?" id="random">Random</a></p>
   <p><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></p>
-</div>
 
+</div>
 
   </div>
 

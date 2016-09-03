@@ -10,25 +10,19 @@
 
   <script>
     window.onload = function() {
-
       var random = document.getElementById('random');
-
-
       if (random.addEventListener) {
-
         random.addEventListener('click', function(evt) {
             evt.preventDefault();
             window.location = '/' + (Math.ceil(Math.random() * 110));
         }, false);
       }
       else {
-        random.attachEvent('onclick', function() {
+        random.attachEvent('onclick', function(evt) {
+            evt.preventDefault();
             window.location = '/' + (Math.ceil(Math.random() * 110));
         });
       }
-
-
-
     }
   </script>
 
@@ -37,11 +31,9 @@
 <body>
 
   <div class="wrapper">
-
     <div class="header">
       <a href="/">withrye</a>
     </div>
-
     <div class="post">
   <p>There is this annoying Muni driver on the N every morning who likes to talk a lot over the PA and call people “folks.” He’s being friendly and whatever, but I can’t stand his voice. The pitch and rhythm and irritating as ass <i>cadence</i> of it. I got it. He sounds like Duffman. It feels so good to put on earphones and drown him out. I literally smile when I can’t make out what he’s saying. I feel the same thrill when there are crazy people raving on the bus. Their lips can keep on smacking, but they have no power here har harhar.</p>
 
@@ -76,18 +68,27 @@
 </div>
 
 <div class="footer">
+
   
     <p><a href="/72">Previous</a></p>
   
+
   
     <p><a href="/74">Next</a></p>
   
-  <p><a href="/1">First</a></p>
-  <p><a href="/">Latest</a></p>
+
+  
+    <p><a href="/1">First</a></p>
+  
+
+  
+    <p><a href="/110">Latest</a></p>
+  
+
   <p><a href="/?" id="random">Random</a></p>
   <p><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></p>
-</div>
 
+</div>
 
   </div>
 

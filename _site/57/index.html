@@ -10,25 +10,19 @@
 
   <script>
     window.onload = function() {
-
       var random = document.getElementById('random');
-
-
       if (random.addEventListener) {
-
         random.addEventListener('click', function(evt) {
             evt.preventDefault();
             window.location = '/' + (Math.ceil(Math.random() * 110));
         }, false);
       }
       else {
-        random.attachEvent('onclick', function() {
+        random.attachEvent('onclick', function(evt) {
+            evt.preventDefault();
             window.location = '/' + (Math.ceil(Math.random() * 110));
         });
       }
-
-
-
     }
   </script>
 
@@ -37,11 +31,9 @@
 <body>
 
   <div class="wrapper">
-
     <div class="header">
       <a href="/">withrye</a>
     </div>
-
     <div class="post">
   <p>When I run out, feel bottom, have nothing be there when I reach out, I say out loud STOP and remind myself—there’s a whole other side I’m forgetting at the dismal frenzy moment. A whole other side of good things, which are so clear and catching in a better light of mood, but, deep down in the tunnels where I get stuck, I cannot see or feel them. So I revisit favorites, summon backup, think fondly. Even if all that doesn’t work, it helps.</p>
 
@@ -60,18 +52,27 @@
 </div>
 
 <div class="footer">
+
   
     <p><a href="/56">Previous</a></p>
   
+
   
     <p><a href="/58">Next</a></p>
   
-  <p><a href="/1">First</a></p>
-  <p><a href="/">Latest</a></p>
+
+  
+    <p><a href="/1">First</a></p>
+  
+
+  
+    <p><a href="/110">Latest</a></p>
+  
+
   <p><a href="/?" id="random">Random</a></p>
   <p><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></p>
-</div>
 
+</div>
 
   </div>
 

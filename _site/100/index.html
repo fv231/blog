@@ -10,25 +10,19 @@
 
   <script>
     window.onload = function() {
-
       var random = document.getElementById('random');
-
-
       if (random.addEventListener) {
-
         random.addEventListener('click', function(evt) {
             evt.preventDefault();
             window.location = '/' + (Math.ceil(Math.random() * 110));
         }, false);
       }
       else {
-        random.attachEvent('onclick', function() {
+        random.attachEvent('onclick', function(evt) {
+            evt.preventDefault();
             window.location = '/' + (Math.ceil(Math.random() * 110));
         });
       }
-
-
-
     }
   </script>
 
@@ -37,11 +31,9 @@
 <body>
 
   <div class="wrapper">
-
     <div class="header">
       <a href="/">withrye</a>
     </div>
-
     <div class="post">
   <p>I’m at the cafe and there is this person next to me lecturing to someone she’s with. They might be tutor and tutee or maybe bigger and younger sisters? I don’t know, but I feel bad for the junior. The senior would say stuff like, “If you didn’t understand this at first, why didn’t you say something? Do you just go along with it without asking why?” and “I’m asking you a question. Why don’t you think about it first before answering me?” Being direct and “mean” like this gets things done I guess? and tough love and it’s the only way they would learn and so forth. It’s gross and annoying to me and I won’t like you as a person.</p>
 
@@ -55,18 +47,27 @@
 </div>
 
 <div class="footer">
+
   
     <p><a href="/99">Previous</a></p>
   
+
   
     <p><a href="/101">Next</a></p>
   
-  <p><a href="/1">First</a></p>
-  <p><a href="/">Latest</a></p>
+
+  
+    <p><a href="/1">First</a></p>
+  
+
+  
+    <p><a href="/110">Latest</a></p>
+  
+
   <p><a href="/?" id="random">Random</a></p>
   <p><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></p>
-</div>
 
+</div>
 
   </div>
 

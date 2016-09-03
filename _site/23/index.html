@@ -10,25 +10,19 @@
 
   <script>
     window.onload = function() {
-
       var random = document.getElementById('random');
-
-
       if (random.addEventListener) {
-
         random.addEventListener('click', function(evt) {
             evt.preventDefault();
             window.location = '/' + (Math.ceil(Math.random() * 110));
         }, false);
       }
       else {
-        random.attachEvent('onclick', function() {
+        random.attachEvent('onclick', function(evt) {
+            evt.preventDefault();
             window.location = '/' + (Math.ceil(Math.random() * 110));
         });
       }
-
-
-
     }
   </script>
 
@@ -37,11 +31,9 @@
 <body>
 
   <div class="wrapper">
-
     <div class="header">
       <a href="/">withrye</a>
     </div>
-
     <div class="post">
   <p>So I’m pretty sick, the sickest I’ve been for a long time. I thought a good night’s rest would cure me, like normal times before, but this bout of <i>disease</i> lingered through the night and totally disabled me in the morning. I was kind of scared for an instant that this might not be in the realm of ailments Walgreens would have a fix for. Then I felt better, and I’ve been drinking strong tea and reading Couch by Benjamin Parzybok. Soup too. My hoodie up.</p>
 
@@ -57,18 +49,27 @@
 </div>
 
 <div class="footer">
+
   
     <p><a href="/22">Previous</a></p>
   
+
   
     <p><a href="/24">Next</a></p>
   
-  <p><a href="/1">First</a></p>
-  <p><a href="/">Latest</a></p>
+
+  
+    <p><a href="/1">First</a></p>
+  
+
+  
+    <p><a href="/110">Latest</a></p>
+  
+
   <p><a href="/?" id="random">Random</a></p>
   <p><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></p>
-</div>
 
+</div>
 
   </div>
 

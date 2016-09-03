@@ -10,25 +10,19 @@
 
   <script>
     window.onload = function() {
-
       var random = document.getElementById('random');
-
-
       if (random.addEventListener) {
-
         random.addEventListener('click', function(evt) {
             evt.preventDefault();
             window.location = '/' + (Math.ceil(Math.random() * 110));
         }, false);
       }
       else {
-        random.attachEvent('onclick', function() {
+        random.attachEvent('onclick', function(evt) {
+            evt.preventDefault();
             window.location = '/' + (Math.ceil(Math.random() * 110));
         });
       }
-
-
-
     }
   </script>
 
@@ -37,29 +31,36 @@
 <body>
 
   <div class="wrapper">
-
     <div class="header">
       <a href="/">withrye</a>
     </div>
-
     <div class="post">
   <p>My favorite coffee shop is the Blue Danube on Clement. It’s small, with crowded tables, heavy couches, and squeezes you in, but it’s light and airy as the entire front opens out. I go for their salad, and not-too-sweet chai. They charge for wifi, which is a plus to me. Super great atmosphere. Like twinkling lights at dusk. It’s been closed for a while now because of plumbing problems–“alleged” plumbing problems, someone had to write on Yelp, which made me despair. I need my place back.</p>
 
 </div>
 
 <div class="footer">
+
   
     <p><a href="/93">Previous</a></p>
   
+
   
     <p><a href="/95">Next</a></p>
   
-  <p><a href="/1">First</a></p>
-  <p><a href="/">Latest</a></p>
+
+  
+    <p><a href="/1">First</a></p>
+  
+
+  
+    <p><a href="/110">Latest</a></p>
+  
+
   <p><a href="/?" id="random">Random</a></p>
   <p><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></p>
-</div>
 
+</div>
 
   </div>
 

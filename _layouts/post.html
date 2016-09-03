@@ -7,14 +7,24 @@ layout: default
 </div>
 
 <div class="footer">
+
   {% if page.previous %}
     <p><a href="{{page.previous.url}}">Previous</a></p>
   {% endif %}
+
   {% if page.next %}
     <p><a href="{{page.next.url}}">Next</a></p>
   {% endif %}
-  <p><a href="/1">First</a></p>
-  <p><a href="/">Latest</a></p>
+
+  {% if page.previous %}
+    <p><a href="{{site.posts.last.url}}">First</a></p>
+  {% endif %}
+
+  {% if page.next %}
+    <p><a href="{{site.posts.first.url}}">Latest</a></p>
+  {% endif %}
+
   <p><a href="/?" id="random">Random</a></p>
   <p><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></p>
+
 </div>

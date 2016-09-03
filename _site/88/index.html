@@ -10,25 +10,19 @@
 
   <script>
     window.onload = function() {
-
       var random = document.getElementById('random');
-
-
       if (random.addEventListener) {
-
         random.addEventListener('click', function(evt) {
             evt.preventDefault();
             window.location = '/' + (Math.ceil(Math.random() * 110));
         }, false);
       }
       else {
-        random.attachEvent('onclick', function() {
+        random.attachEvent('onclick', function(evt) {
+            evt.preventDefault();
             window.location = '/' + (Math.ceil(Math.random() * 110));
         });
       }
-
-
-
     }
   </script>
 
@@ -37,11 +31,9 @@
 <body>
 
   <div class="wrapper">
-
     <div class="header">
       <a href="/">withrye</a>
     </div>
-
     <div class="post">
   <p>Here’s how you get detached. You have some expectation of what’s going to happen. Then it doesn’t happen like you expected. Maybe moreover, what actually happens is the exact opposite of what you anticipated, which is super jarring. Then this happens again, where you have an initial expectation and then the complete opposite happens. By the third time, you start hedging yourself and think, hmm, whatever I’m feeling now, there’s a chance—and not that unlikely of a chance either since it’s happened twice already—that I’m just totally wrong about what’s going to happen so I shouldn’t go 100% in with this feeling. Maybe 95% in. That natural certainty then just goes down from there, until one day, it’s 0, and any suspicion or intuition or gut feeling, any little tinge you feel about what is going to happen is given almost no weight and then there’s no hope anymore. No excitement. And past a certain point, no fear either.</p>
 
@@ -52,18 +44,27 @@
 </div>
 
 <div class="footer">
+
   
     <p><a href="/87">Previous</a></p>
   
+
   
     <p><a href="/89">Next</a></p>
   
-  <p><a href="/1">First</a></p>
-  <p><a href="/">Latest</a></p>
+
+  
+    <p><a href="/1">First</a></p>
+  
+
+  
+    <p><a href="/110">Latest</a></p>
+  
+
   <p><a href="/?" id="random">Random</a></p>
   <p><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></p>
-</div>
 
+</div>
 
   </div>
 

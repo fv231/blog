@@ -10,25 +10,19 @@
 
   <script>
     window.onload = function() {
-
       var random = document.getElementById('random');
-
-
       if (random.addEventListener) {
-
         random.addEventListener('click', function(evt) {
             evt.preventDefault();
             window.location = '/' + (Math.ceil(Math.random() * 110));
         }, false);
       }
       else {
-        random.attachEvent('onclick', function() {
+        random.attachEvent('onclick', function(evt) {
+            evt.preventDefault();
             window.location = '/' + (Math.ceil(Math.random() * 110));
         });
       }
-
-
-
     }
   </script>
 
@@ -37,11 +31,9 @@
 <body>
 
   <div class="wrapper">
-
     <div class="header">
       <a href="/">withrye</a>
     </div>
-
     <div class="post">
   <p>It’s been a month since I moved into my apartment and I’m settling in nicely. I would say I’ve been on my own for a month, but I really haven’t. I go home—what’s <i>your </i>definition of home??—at least once a week to eat or pick up more boxes of my stuff I didn’t move over yet. And suffice to say I am not lacking in visitors; as Elbert said, Gordon’s spent more time in my apartment than I have, ha!</p>
 
@@ -56,18 +48,27 @@
 </div>
 
 <div class="footer">
+
   
     <p><a href="/11">Previous</a></p>
   
+
   
     <p><a href="/13">Next</a></p>
   
-  <p><a href="/1">First</a></p>
-  <p><a href="/">Latest</a></p>
+
+  
+    <p><a href="/1">First</a></p>
+  
+
+  
+    <p><a href="/110">Latest</a></p>
+  
+
   <p><a href="/?" id="random">Random</a></p>
   <p><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></p>
-</div>
 
+</div>
 
   </div>
 

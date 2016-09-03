@@ -10,25 +10,19 @@
 
   <script>
     window.onload = function() {
-
       var random = document.getElementById('random');
-
-
       if (random.addEventListener) {
-
         random.addEventListener('click', function(evt) {
             evt.preventDefault();
             window.location = '/' + (Math.ceil(Math.random() * 110));
         }, false);
       }
       else {
-        random.attachEvent('onclick', function() {
+        random.attachEvent('onclick', function(evt) {
+            evt.preventDefault();
             window.location = '/' + (Math.ceil(Math.random() * 110));
         });
       }
-
-
-
     }
   </script>
 
@@ -37,11 +31,9 @@
 <body>
 
   <div class="wrapper">
-
     <div class="header">
       <a href="/">withrye</a>
     </div>
-
     <div class="post">
   <p>They say there will be a big storm tomorrow and they’re closing schools and everything. I am <i>so</i> skeptical it would be anything, really. Like the protests recently, and fucking Occupy back then, so hyped, change is coming, but there’s nothing <i>there</i>, maybe there was something in the beginning, the swell of new purpose—the tents come down all the same. This build-up is so familiar to me now that I side by default with the underwhelm. I keep thinking people are doing things just because they’re bored. It’s like someone who makes it a point to own very few possessions so they can drop everything and leave on a moment’s notice; they think their life would be more interesting than it actually is.</p>
 
@@ -54,18 +46,27 @@
 </div>
 
 <div class="footer">
+
   
     <p><a href="/78">Previous</a></p>
   
+
   
     <p><a href="/80">Next</a></p>
   
-  <p><a href="/1">First</a></p>
-  <p><a href="/">Latest</a></p>
+
+  
+    <p><a href="/1">First</a></p>
+  
+
+  
+    <p><a href="/110">Latest</a></p>
+  
+
   <p><a href="/?" id="random">Random</a></p>
   <p><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></p>
-</div>
 
+</div>
 
   </div>
 
