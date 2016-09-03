@@ -3,38 +3,39 @@
 <html>
 
 <head>
-  <meta charset="utf-8" />
-  <title>withrye</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/style.css" />
 
-  <script>
-    window.onload = function() {
-      var random = document.getElementById('random');
-      if (random.addEventListener) {
-        random.addEventListener('click', function(evt) {
-            evt.preventDefault();
-            window.location = '/' + (Math.ceil(Math.random() * 110));
-        }, false);
-      }
-      else {
-        random.attachEvent('onclick', function(evt) {
-            evt.preventDefault();
-            window.location = '/' + (Math.ceil(Math.random() * 110));
-        });
-      }
+<meta charset="utf-8" />
+<title>withrye</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="/style.css" />
+
+<script>
+  window.onload = function() {
+    var randLink = document.getElementById('random');
+    if (randLink.addEventListener) {
+      randLink.addEventListener('click', function(evt) {
+        evt.preventDefault();
+        window.location = '/' + (Math.ceil(Math.random() * 110));
+      }, false);
     }
-  </script>
+    else {
+      randLink.attachEvent('onclick', function(evt) {
+        evt.preventDefault();
+        window.location = '/' + (Math.ceil(Math.random() * 110));
+      });
+    }
+  }
+</script>
 
 </head>
 
 <body>
 
-  <div class="wrapper">
-    <div class="header">
-      <a href="/">withrye</a>
-    </div>
-    <div class="post">
+<div class="wrapper">
+  <div class="header">
+    <a href="/">withrye</a>
+  </div>
+  <div class="post">
   <p>Merry Christmas everyone. It’s a few hours after the fact, yeah. It still feels very much like it. It’s snowing somewhere.</p>
 
 <p>I just woke up from a nap, had some soup, and am planning to stay up for a while. Winter is such a reflective season with the cold, the ending of the year and start of the next, the time off. Favorite season by far. I can see myself migrating north for the summer.</p>
@@ -71,7 +72,7 @@ Oh, Christmas lights, keep shining on</i></p>
 
 </div>
 
-  </div>
+</div>
 
 </body>
 

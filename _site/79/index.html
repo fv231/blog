@@ -3,38 +3,39 @@
 <html>
 
 <head>
-  <meta charset="utf-8" />
-  <title>withrye</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/style.css" />
 
-  <script>
-    window.onload = function() {
-      var random = document.getElementById('random');
-      if (random.addEventListener) {
-        random.addEventListener('click', function(evt) {
-            evt.preventDefault();
-            window.location = '/' + (Math.ceil(Math.random() * 110));
-        }, false);
-      }
-      else {
-        random.attachEvent('onclick', function(evt) {
-            evt.preventDefault();
-            window.location = '/' + (Math.ceil(Math.random() * 110));
-        });
-      }
+<meta charset="utf-8" />
+<title>withrye</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="/style.css" />
+
+<script>
+  window.onload = function() {
+    var randLink = document.getElementById('random');
+    if (randLink.addEventListener) {
+      randLink.addEventListener('click', function(evt) {
+        evt.preventDefault();
+        window.location = '/' + (Math.ceil(Math.random() * 110));
+      }, false);
     }
-  </script>
+    else {
+      randLink.attachEvent('onclick', function(evt) {
+        evt.preventDefault();
+        window.location = '/' + (Math.ceil(Math.random() * 110));
+      });
+    }
+  }
+</script>
 
 </head>
 
 <body>
 
-  <div class="wrapper">
-    <div class="header">
-      <a href="/">withrye</a>
-    </div>
-    <div class="post">
+<div class="wrapper">
+  <div class="header">
+    <a href="/">withrye</a>
+  </div>
+  <div class="post">
   <p>They say there will be a big storm tomorrow and they’re closing schools and everything. I am <i>so</i> skeptical it would be anything, really. Like the protests recently, and fucking Occupy back then, so hyped, change is coming, but there’s nothing <i>there</i>, maybe there was something in the beginning, the swell of new purpose—the tents come down all the same. This build-up is so familiar to me now that I side by default with the underwhelm. I keep thinking people are doing things just because they’re bored. It’s like someone who makes it a point to own very few possessions so they can drop everything and leave on a moment’s notice; they think their life would be more interesting than it actually is.</p>
 
 <p>Ha, so I’m saying modern life is so boring that it can even suck the potency out of storms. Anyway, I personally hope it would rain like h*ck tomorrow. I like the complex lighting of rainy days. It makes for interesting pictures.</p>
@@ -68,7 +69,7 @@
 
 </div>
 
-  </div>
+</div>
 
 </body>
 

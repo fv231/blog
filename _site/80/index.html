@@ -3,38 +3,39 @@
 <html>
 
 <head>
-  <meta charset="utf-8" />
-  <title>withrye</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/style.css" />
 
-  <script>
-    window.onload = function() {
-      var random = document.getElementById('random');
-      if (random.addEventListener) {
-        random.addEventListener('click', function(evt) {
-            evt.preventDefault();
-            window.location = '/' + (Math.ceil(Math.random() * 110));
-        }, false);
-      }
-      else {
-        random.attachEvent('onclick', function(evt) {
-            evt.preventDefault();
-            window.location = '/' + (Math.ceil(Math.random() * 110));
-        });
-      }
+<meta charset="utf-8" />
+<title>withrye</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="/style.css" />
+
+<script>
+  window.onload = function() {
+    var randLink = document.getElementById('random');
+    if (randLink.addEventListener) {
+      randLink.addEventListener('click', function(evt) {
+        evt.preventDefault();
+        window.location = '/' + (Math.ceil(Math.random() * 110));
+      }, false);
     }
-  </script>
+    else {
+      randLink.attachEvent('onclick', function(evt) {
+        evt.preventDefault();
+        window.location = '/' + (Math.ceil(Math.random() * 110));
+      });
+    }
+  }
+</script>
 
 </head>
 
 <body>
 
-  <div class="wrapper">
-    <div class="header">
-      <a href="/">withrye</a>
-    </div>
-    <div class="post">
+<div class="wrapper">
+  <div class="header">
+    <a href="/">withrye</a>
+  </div>
+  <div class="post">
   <p>I would title this chapter in my life “Marketing.”</p>
 
 <p>I’ve kept a blog for over a decade now. My first one went up some time in high school, when I found out I can put things on the internet. I really liked that design too—my favorite, in fact. It was very hacky and I did everything I could to get it to look like what I wanted, hell with web standards. It had frames everywhere and I colored the scroll bars and messed with the borders around a pop-up window. It only worked for a very specific version of IE and I think only for about five minutes before scrolling around broke everything. But, it was everything I wanted, exactly as I wanted. I lost it though when Tripod deleted my site. They found out I had circumvented the ads they inserted by leaving a comment tag open at the end of my file. The web was so innocent.</p>
@@ -74,7 +75,7 @@
 
 </div>
 
-  </div>
+</div>
 
 </body>
 

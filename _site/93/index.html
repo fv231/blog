@@ -3,38 +3,39 @@
 <html>
 
 <head>
-  <meta charset="utf-8" />
-  <title>withrye</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/style.css" />
 
-  <script>
-    window.onload = function() {
-      var random = document.getElementById('random');
-      if (random.addEventListener) {
-        random.addEventListener('click', function(evt) {
-            evt.preventDefault();
-            window.location = '/' + (Math.ceil(Math.random() * 110));
-        }, false);
-      }
-      else {
-        random.attachEvent('onclick', function(evt) {
-            evt.preventDefault();
-            window.location = '/' + (Math.ceil(Math.random() * 110));
-        });
-      }
+<meta charset="utf-8" />
+<title>withrye</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="/style.css" />
+
+<script>
+  window.onload = function() {
+    var randLink = document.getElementById('random');
+    if (randLink.addEventListener) {
+      randLink.addEventListener('click', function(evt) {
+        evt.preventDefault();
+        window.location = '/' + (Math.ceil(Math.random() * 110));
+      }, false);
     }
-  </script>
+    else {
+      randLink.attachEvent('onclick', function(evt) {
+        evt.preventDefault();
+        window.location = '/' + (Math.ceil(Math.random() * 110));
+      });
+    }
+  }
+</script>
 
 </head>
 
 <body>
 
-  <div class="wrapper">
-    <div class="header">
-      <a href="/">withrye</a>
-    </div>
-    <div class="post">
+<div class="wrapper">
+  <div class="header">
+    <a href="/">withrye</a>
+  </div>
+  <div class="post">
   <p>Anti-hipsters are like, the <i>exact same things</i> as hipsters, right??? I mean, it’s like monsters and the abyss, “if you gaze too long into it,” etc.</p>
 
 <p>I saw Mad Max the other day and there was this one scene near the beginning, when all the crazy cars speed into a huge desert storm with sand tornados. Then the cars crash and the sand tornados just <i>suck</i> up everything and you see flying bodies and car parts all on fire blazing across the dark sky with flashes of lightning everywhere, holy shit that was good. It was the most awesome thing my eyes have seen since Crater Lake probably. I have to watch it again.</p>
@@ -65,7 +66,7 @@
 
 </div>
 
-  </div>
+</div>
 
 </body>
 

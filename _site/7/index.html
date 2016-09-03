@@ -3,38 +3,39 @@
 <html>
 
 <head>
-  <meta charset="utf-8" />
-  <title>withrye</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/style.css" />
 
-  <script>
-    window.onload = function() {
-      var random = document.getElementById('random');
-      if (random.addEventListener) {
-        random.addEventListener('click', function(evt) {
-            evt.preventDefault();
-            window.location = '/' + (Math.ceil(Math.random() * 110));
-        }, false);
-      }
-      else {
-        random.attachEvent('onclick', function(evt) {
-            evt.preventDefault();
-            window.location = '/' + (Math.ceil(Math.random() * 110));
-        });
-      }
+<meta charset="utf-8" />
+<title>withrye</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="/style.css" />
+
+<script>
+  window.onload = function() {
+    var randLink = document.getElementById('random');
+    if (randLink.addEventListener) {
+      randLink.addEventListener('click', function(evt) {
+        evt.preventDefault();
+        window.location = '/' + (Math.ceil(Math.random() * 110));
+      }, false);
     }
-  </script>
+    else {
+      randLink.attachEvent('onclick', function(evt) {
+        evt.preventDefault();
+        window.location = '/' + (Math.ceil(Math.random() * 110));
+      });
+    }
+  }
+</script>
 
 </head>
 
 <body>
 
-  <div class="wrapper">
-    <div class="header">
-      <a href="/">withrye</a>
-    </div>
-    <div class="post">
+<div class="wrapper">
+  <div class="header">
+    <a href="/">withrye</a>
+  </div>
+  <div class="post">
   <p>I have three recurring nightmares: one, I suddenly have to take a final for a class I didn’t know I had signed up for, two, my teeth fall out, and three, I crash my car. These three are easily related I bet, lots of loamy potential here for analysis if you’re into it.</p>
 
 <p>Then I have this other sort of dream that’s one step better than a nightmare, not as heart-pounding but still pretty awful. I would drink too much before bed. And my bladder, under mounting pressure with no sign of relief from its unresponsive owner, sends an urgent distress call to my brain to assemble elaborate dreams of myself peeing, so I would think I’ve peed already and relax. But my subconscious is militarized (yeah baby lol!) and I would notice how weird things are, like a toilet would keep following me around, <i>beckoning</i>, and I snap awake. The relief is immense. And not just from going to the bathroom for real either~ It’s good to know my mind is keen enough to see through my treacherous bladder’s machinations. My dignity is intact!</p>
@@ -66,7 +67,7 @@
 
 </div>
 
-  </div>
+</div>
 
 </body>
 

@@ -3,38 +3,39 @@
 <html>
 
 <head>
-  <meta charset="utf-8" />
-  <title>withrye</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/style.css" />
 
-  <script>
-    window.onload = function() {
-      var random = document.getElementById('random');
-      if (random.addEventListener) {
-        random.addEventListener('click', function(evt) {
-            evt.preventDefault();
-            window.location = '/' + (Math.ceil(Math.random() * 110));
-        }, false);
-      }
-      else {
-        random.attachEvent('onclick', function(evt) {
-            evt.preventDefault();
-            window.location = '/' + (Math.ceil(Math.random() * 110));
-        });
-      }
+<meta charset="utf-8" />
+<title>withrye</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="/style.css" />
+
+<script>
+  window.onload = function() {
+    var randLink = document.getElementById('random');
+    if (randLink.addEventListener) {
+      randLink.addEventListener('click', function(evt) {
+        evt.preventDefault();
+        window.location = '/' + (Math.ceil(Math.random() * 110));
+      }, false);
     }
-  </script>
+    else {
+      randLink.attachEvent('onclick', function(evt) {
+        evt.preventDefault();
+        window.location = '/' + (Math.ceil(Math.random() * 110));
+      });
+    }
+  }
+</script>
 
 </head>
 
 <body>
 
-  <div class="wrapper">
-    <div class="header">
-      <a href="/">withrye</a>
-    </div>
-    <div class="post">
+<div class="wrapper">
+  <div class="header">
+    <a href="/">withrye</a>
+  </div>
+  <div class="post">
   <p>Birds have been destroying the screens in my windows. At first, I thought the screens were always just crappy and didn’t pay any attention, but then the holes got bigger. And one day last spring, the nesting season apparently, I woke up to this ripping sound amidst the usual annoying chirping and I made the connection. This spring, the birds were back, and outright tore like an entire half of the screen off.</p>
 
 <p>I go to the same place for lunch pretty much. I get soup. The cashier who works there started recognizing me. And then started giving me discounts without telling me. I didn’t realize until like the third time. I would get the large and get charged for the small. I thanked her finally and she shrugged. Last time I was there, she rang up my big salad as a $3 wrap and I felt weird and was like, hmm, maybe I should say something, that’s a pretty deep cut. But I just ate the salad.</p>
@@ -66,7 +67,7 @@
 
 </div>
 
-  </div>
+</div>
 
 </body>
 

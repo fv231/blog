@@ -3,38 +3,39 @@
 <html>
 
 <head>
-  <meta charset="utf-8" />
-  <title>withrye</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/style.css" />
 
-  <script>
-    window.onload = function() {
-      var random = document.getElementById('random');
-      if (random.addEventListener) {
-        random.addEventListener('click', function(evt) {
-            evt.preventDefault();
-            window.location = '/' + (Math.ceil(Math.random() * 110));
-        }, false);
-      }
-      else {
-        random.attachEvent('onclick', function(evt) {
-            evt.preventDefault();
-            window.location = '/' + (Math.ceil(Math.random() * 110));
-        });
-      }
+<meta charset="utf-8" />
+<title>withrye</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="/style.css" />
+
+<script>
+  window.onload = function() {
+    var randLink = document.getElementById('random');
+    if (randLink.addEventListener) {
+      randLink.addEventListener('click', function(evt) {
+        evt.preventDefault();
+        window.location = '/' + (Math.ceil(Math.random() * 110));
+      }, false);
     }
-  </script>
+    else {
+      randLink.attachEvent('onclick', function(evt) {
+        evt.preventDefault();
+        window.location = '/' + (Math.ceil(Math.random() * 110));
+      });
+    }
+  }
+</script>
 
 </head>
 
 <body>
 
-  <div class="wrapper">
-    <div class="header">
-      <a href="/">withrye</a>
-    </div>
-    <div class="post">
+<div class="wrapper">
+  <div class="header">
+    <a href="/">withrye</a>
+  </div>
+  <div class="post">
   <p>I don’t know what to focus on. Job, writing, or dating. It’s especially hard because I need to do things one at a time to be effective. Each of those three things seems like it’s on a timer and I need to address it right now before it’s too late. Harried.</p>
 
 <p>I live really close to my parents’ house, about two miles, and whenever I have dinner with them, I would walk back, afterward, to my apartment. The walk usually takes forty-five minutes. It goes through this big residential district, block after block of quiet houses on quiet streets. It’s usually just turning dark then, sunset in the Sunset!, and I would pass by windows filled with this warm domestic glow. Cars all parked in their driveways. Drifting out, low chatter of TV, regular chatter, and flutes, pianos, violins squeaking in practice.</p>
@@ -66,7 +67,7 @@
 
 </div>
 
-  </div>
+</div>
 
 </body>
 

@@ -3,38 +3,39 @@
 <html>
 
 <head>
-  <meta charset="utf-8" />
-  <title>withrye</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/style.css" />
 
-  <script>
-    window.onload = function() {
-      var random = document.getElementById('random');
-      if (random.addEventListener) {
-        random.addEventListener('click', function(evt) {
-            evt.preventDefault();
-            window.location = '/' + (Math.ceil(Math.random() * 110));
-        }, false);
-      }
-      else {
-        random.attachEvent('onclick', function(evt) {
-            evt.preventDefault();
-            window.location = '/' + (Math.ceil(Math.random() * 110));
-        });
-      }
+<meta charset="utf-8" />
+<title>withrye</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="/style.css" />
+
+<script>
+  window.onload = function() {
+    var randLink = document.getElementById('random');
+    if (randLink.addEventListener) {
+      randLink.addEventListener('click', function(evt) {
+        evt.preventDefault();
+        window.location = '/' + (Math.ceil(Math.random() * 110));
+      }, false);
     }
-  </script>
+    else {
+      randLink.attachEvent('onclick', function(evt) {
+        evt.preventDefault();
+        window.location = '/' + (Math.ceil(Math.random() * 110));
+      });
+    }
+  }
+</script>
 
 </head>
 
 <body>
 
-  <div class="wrapper">
-    <div class="header">
-      <a href="/">withrye</a>
-    </div>
-    <div class="post">
+<div class="wrapper">
+  <div class="header">
+    <a href="/">withrye</a>
+  </div>
+  <div class="post">
   <p>This is my favorite time of the year, end of fall, bright winter. Daylight savings time just ended—or began?—daylight savings time <i>happened</i>; anyway, I gained back an hour. I will never ever understand daylight savings time, how anyone first thought of it, how they then successfully explained and conveyed that thought to the public, and precisely just how they managed to convince everyone that such a messy hassle—which requires the concerted effort of the entire population twice a year and introduces a great deal of chaos and variation into something as fixed and depended upon as <i>the time</i>—is a good idea. I’m sure it <i>is </i>a good idea, somehow, an ingenious exercise of manipulating an abstraction for profit. It just annoys me that I can’t ever hope to approach that level of articulation and sway, that sell-a-penguin-some-ice force of will that can get everybody to voluntarily shorten one of their springtime days by a whole hour for no apparent reason.</p>
 
 </div>
@@ -62,7 +63,7 @@
 
 </div>
 
-  </div>
+</div>
 
 </body>
 

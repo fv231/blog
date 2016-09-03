@@ -3,38 +3,39 @@
 <html>
 
 <head>
-  <meta charset="utf-8" />
-  <title>withrye</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/style.css" />
 
-  <script>
-    window.onload = function() {
-      var random = document.getElementById('random');
-      if (random.addEventListener) {
-        random.addEventListener('click', function(evt) {
-            evt.preventDefault();
-            window.location = '/' + (Math.ceil(Math.random() * 110));
-        }, false);
-      }
-      else {
-        random.attachEvent('onclick', function(evt) {
-            evt.preventDefault();
-            window.location = '/' + (Math.ceil(Math.random() * 110));
-        });
-      }
+<meta charset="utf-8" />
+<title>withrye</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="/style.css" />
+
+<script>
+  window.onload = function() {
+    var randLink = document.getElementById('random');
+    if (randLink.addEventListener) {
+      randLink.addEventListener('click', function(evt) {
+        evt.preventDefault();
+        window.location = '/' + (Math.ceil(Math.random() * 110));
+      }, false);
     }
-  </script>
+    else {
+      randLink.attachEvent('onclick', function(evt) {
+        evt.preventDefault();
+        window.location = '/' + (Math.ceil(Math.random() * 110));
+      });
+    }
+  }
+</script>
 
 </head>
 
 <body>
 
-  <div class="wrapper">
-    <div class="header">
-      <a href="/">withrye</a>
-    </div>
-    <div class="post">
+<div class="wrapper">
+  <div class="header">
+    <a href="/">withrye</a>
+  </div>
+  <div class="post">
   <p>There’s been a coming back of sorts recently. Lawrence, Connie, Kevin Man, and Gordon are all back in the city after their own ways of being away. Myself, I haven’t been anywhere, but feel adrift. I haven’t had much time to write and collect my thoughts, maybe that’s why. There’s lots of whirlwind and events passing by without me giving them proper notice, and people I’ve met I should follow up with. It really disturbs me to think of people I will never see again, because we were too busy or whatever to get together again after the initial meeting. They might as well have <i>died</i>, from my perspective. And this means that <i>I</i> might as well have died from <i>their </i>perspective. These little subjective deaths really add up.</p>
 
 <p>Baseball is blue balls, on all levels—anti-climaxes and sudden resets are everywhere. The strikes a pitcher throws only matter if they reach three. No matter how great the first two strikes are, if the batter walks or gets a hit, those hard-earned strikes are meaningless for the game and don’t add to anything cumulative. For the batter, all the effort they put into getting on base and stealing bases and all that pays off only if they can get back home. You can get hits all day long, but if they don’t turn into runs, they’re also trivial in the final outcome of the game. Winning games, still, is full of wasted effort. You can still lose a best-of-seven series if you win three games. All that effort in winning those games, again, come to naught. The only validating end point is winning the World Series, but even that, is not an end all. There will be another World Series next year. There is no end all! All victories are temporary, someone said. In that, I think sports, especially baseball, is like life. It’s just a series of plateaus, one after another, after another, with no summit. Which gets to what I want to say: life is blue balls!</p>
@@ -64,7 +65,7 @@
 
 </div>
 
-  </div>
+</div>
 
 </body>
 

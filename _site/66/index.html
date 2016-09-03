@@ -3,38 +3,39 @@
 <html>
 
 <head>
-  <meta charset="utf-8" />
-  <title>withrye</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/style.css" />
 
-  <script>
-    window.onload = function() {
-      var random = document.getElementById('random');
-      if (random.addEventListener) {
-        random.addEventListener('click', function(evt) {
-            evt.preventDefault();
-            window.location = '/' + (Math.ceil(Math.random() * 110));
-        }, false);
-      }
-      else {
-        random.attachEvent('onclick', function(evt) {
-            evt.preventDefault();
-            window.location = '/' + (Math.ceil(Math.random() * 110));
-        });
-      }
+<meta charset="utf-8" />
+<title>withrye</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="/style.css" />
+
+<script>
+  window.onload = function() {
+    var randLink = document.getElementById('random');
+    if (randLink.addEventListener) {
+      randLink.addEventListener('click', function(evt) {
+        evt.preventDefault();
+        window.location = '/' + (Math.ceil(Math.random() * 110));
+      }, false);
     }
-  </script>
+    else {
+      randLink.attachEvent('onclick', function(evt) {
+        evt.preventDefault();
+        window.location = '/' + (Math.ceil(Math.random() * 110));
+      });
+    }
+  }
+</script>
 
 </head>
 
 <body>
 
-  <div class="wrapper">
-    <div class="header">
-      <a href="/">withrye</a>
-    </div>
-    <div class="post">
+<div class="wrapper">
+  <div class="header">
+    <a href="/">withrye</a>
+  </div>
+  <div class="post">
   <p>I think people should propose at the worst possible time, like right in the middle of an argument, perhaps, or maybe after you were an hour late to dinner, or had just lost the cat. It certainly helps to get a yes when you’re on a sunset beach, or in the warm glow of an after-dinner fireplace, or running through some starlit meadow. But if they marry you even at your bottom, your crappiest, without props or benefit of presentation, you can be pretty sure they mean it.</p>
 
 <p>This came to mind when I was thinking about all the elaborate proposal videos with dance numbers and Disney characters, and it’s a whole production, and how put on the woman must feel, under all that romantic duress, if she wasn’t sure she wanted to marry the man. Now suddenly she has to deal with all these eager faces pressuring her to say yes. And even if she does say yes, what if she did it only because she happened to really like dance numbers and was caught up in the moment and it’s <i>that</i> that persuaded her? That would suck! Can’t take the dancers home! Better to not fuzz up that threshold and hope to squeak by.</p>
@@ -66,7 +67,7 @@
 
 </div>
 
-  </div>
+</div>
 
 </body>
 

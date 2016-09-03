@@ -3,38 +3,39 @@
 <html>
 
 <head>
-  <meta charset="utf-8" />
-  <title>withrye</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/style.css" />
 
-  <script>
-    window.onload = function() {
-      var random = document.getElementById('random');
-      if (random.addEventListener) {
-        random.addEventListener('click', function(evt) {
-            evt.preventDefault();
-            window.location = '/' + (Math.ceil(Math.random() * 110));
-        }, false);
-      }
-      else {
-        random.attachEvent('onclick', function(evt) {
-            evt.preventDefault();
-            window.location = '/' + (Math.ceil(Math.random() * 110));
-        });
-      }
+<meta charset="utf-8" />
+<title>withrye</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="/style.css" />
+
+<script>
+  window.onload = function() {
+    var randLink = document.getElementById('random');
+    if (randLink.addEventListener) {
+      randLink.addEventListener('click', function(evt) {
+        evt.preventDefault();
+        window.location = '/' + (Math.ceil(Math.random() * 110));
+      }, false);
     }
-  </script>
+    else {
+      randLink.attachEvent('onclick', function(evt) {
+        evt.preventDefault();
+        window.location = '/' + (Math.ceil(Math.random() * 110));
+      });
+    }
+  }
+</script>
 
 </head>
 
 <body>
 
-  <div class="wrapper">
-    <div class="header">
-      <a href="/">withrye</a>
-    </div>
-    <div class="post">
+<div class="wrapper">
+  <div class="header">
+    <a href="/">withrye</a>
+  </div>
+  <div class="post">
   <p>During the jury selection process, they called twenty-four people to sit up front while the rest of us sat in the audience section, on standby to fill in. I was still pissed having to come in, but as I listened to all the excuses the first batch of people were dishing up, I got disgusted with the weaseling and just resigned myself to the big government D.</p>
 
 <p>There was this one guy, in a suit and haircut, who introduced himself as a technology executive and, answering the judge’s question about prior jury experience, said he was summoned six times and dismissed six times. He suddenly was the most interesting person in the room to me. I stared hard at him the entire time. He spoke curtly, pausing slightly before speaking, as if setting up a tiny verbal stage, and then only saying a few direct words. He had no expression during the whole thing, but he kept clenching and unclenching his robust, shapely jaws, and I watched his jaw muscles bunch and strain.</p>
@@ -70,7 +71,7 @@
 
 </div>
 
-  </div>
+</div>
 
 </body>
 

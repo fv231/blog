@@ -3,38 +3,39 @@
 <html>
 
 <head>
-  <meta charset="utf-8" />
-  <title>withrye</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/style.css" />
 
-  <script>
-    window.onload = function() {
-      var random = document.getElementById('random');
-      if (random.addEventListener) {
-        random.addEventListener('click', function(evt) {
-            evt.preventDefault();
-            window.location = '/' + (Math.ceil(Math.random() * 110));
-        }, false);
-      }
-      else {
-        random.attachEvent('onclick', function(evt) {
-            evt.preventDefault();
-            window.location = '/' + (Math.ceil(Math.random() * 110));
-        });
-      }
+<meta charset="utf-8" />
+<title>withrye</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="/style.css" />
+
+<script>
+  window.onload = function() {
+    var randLink = document.getElementById('random');
+    if (randLink.addEventListener) {
+      randLink.addEventListener('click', function(evt) {
+        evt.preventDefault();
+        window.location = '/' + (Math.ceil(Math.random() * 110));
+      }, false);
     }
-  </script>
+    else {
+      randLink.attachEvent('onclick', function(evt) {
+        evt.preventDefault();
+        window.location = '/' + (Math.ceil(Math.random() * 110));
+      });
+    }
+  }
+</script>
 
 </head>
 
 <body>
 
-  <div class="wrapper">
-    <div class="header">
-      <a href="/">withrye</a>
-    </div>
-    <div class="post">
+<div class="wrapper">
+  <div class="header">
+    <a href="/">withrye</a>
+  </div>
+  <div class="post">
   <p>Having children seems to be a requirement for a meaningful life. You can be the crappiest person, but as long as you have a kid, you are redeemed. You can be a hella rich, good-looking, profoundly generous and charitable <i>genius</i> but you will mean less, in the end, if you don’t have children. You would be considered incomplete if not suspect. Something must be wrong, you’re missing some organs, <i>something</i> must have derailed you.</p>
 
 <p>I’m bringing this up because it’s another one of those unthinking, unexamined, “natural” things in the default settings of society that I hate. “Have kid” is checked under preferences (just under “Get married” and “Buy a house”), and if you uncheck it, there’s bound to be a concerned dialogue pop-up asking if you’re sure.</p>
@@ -68,7 +69,7 @@
 
 </div>
 
-  </div>
+</div>
 
 </body>
 
