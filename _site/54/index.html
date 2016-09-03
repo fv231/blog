@@ -7,31 +7,43 @@
   <title>withrye</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/style.css" />
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Julius+Sans+One" />  
-  <link rel="icon" href="/images/gomez.ico" />
 
   <script>
-
     window.onload = function() {
-      $('#random').click(function() {
-        window.location = '/' + (Math.floor(Math.random() * 109));
-        return false;
-      });
-    }  
-    
+
+      var random = document.getElementById('random');
+
+
+      if (random.addEventListener) {
+
+        random.addEventListener('click', function(evt) {
+            evt.preventDefault();
+            window.location = '/' + (Math.ceil(Math.random() * 110));
+        }, false);
+      }
+      else {
+        random.attachEvent('onclick', function() {
+            window.location = '/' + (Math.ceil(Math.random() * 110));
+        });
+      }
+
+
+
+    }
   </script>
 
 </head>
 
 <body>
-  
-    
-<div class="picture" style="background-image:url(/images/bg54.jpg);">
-</div>
 
+  <div class="wrapper">
 
-<div class="words">
-   <p><span id="dropcap">I</span> get bad dreams. They start in my room. I’m asleep in bed that I share with my brother Timmy and a noise from the doorway wakes me up. Timmy isn’t in bed next to me and I look up angry. What is he doing out of bed making a racket.</p>
+    <div class="header">
+      <a href="/">withrye</a>
+    </div>
+
+    <div class="post">
+  <p>I get bad dreams. They start in my room. I’m asleep in bed that I share with my brother Timmy and a noise from the doorway wakes me up. Timmy isn’t in bed next to me and I look up angry. What is he doing out of bed making a racket.</p>
 
 <p>I can’t see without my glasses, but in my dreams, I can see perfectly. It’s the first hint I am dreaming, afterward in the morning, when I think about it.</p>
 
@@ -39,24 +51,21 @@
 
 </div>
 
-<div class="footer"> 
-  <ul>
-      
-       <li><a href="/53">Previous</a></li> 
-      
-      
-       <li><a href="/55">Next</a></li>
-      
-      <li><a href="/1">First</a></li>
-      <li><a href="#" id="random">Random</a></li>
-      <li><a href="/">Home</a></li>
-      <li><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></li>
-      <li id="sup"><img src="/images/gomez.gif" /></li>
-   </ul>
+<div class="footer">
+  
+    <p><a href="/53">Previous</a></p>
+  
+  
+    <p><a href="/55">Next</a></p>
+  
+  <p><a href="/1">First</a></p>
+  <p><a href="/">Latest</a></p>
+  <p><a href="/?" id="random">Random</a></p>
+  <p><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></p>
 </div>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  </div>
 
 </body>
 

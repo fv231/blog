@@ -7,52 +7,61 @@
   <title>withrye</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/style.css" />
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Julius+Sans+One" />  
-  <link rel="icon" href="/images/gomez.ico" />
 
   <script>
-
     window.onload = function() {
-      $('#random').click(function() {
-        window.location = '/' + (Math.floor(Math.random() * 109));
-        return false;
-      });
-    }  
-    
+
+      var random = document.getElementById('random');
+
+
+      if (random.addEventListener) {
+
+        random.addEventListener('click', function(evt) {
+            evt.preventDefault();
+            window.location = '/' + (Math.ceil(Math.random() * 110));
+        }, false);
+      }
+      else {
+        random.attachEvent('onclick', function() {
+            window.location = '/' + (Math.ceil(Math.random() * 110));
+        });
+      }
+
+
+
+    }
   </script>
 
 </head>
 
 <body>
+
+  <div class="wrapper">
+
+    <div class="header">
+      <a href="/">withrye</a>
+    </div>
+
+    <div class="post">
+  <p>Every thougth that i repent there’;s another chip you haven’t spent, and you’re cashing them in, where do we begin to get clean again. Can we get clean again. I walk home alone with you, in the mood you’re born into, sometimes you let me in, and i take it on the chin, i can’t get clean again. i want to know, can we get clean again. the god of wine comes crashing through the headlights of the car that took you farther than you thought you want to go, we can’t get back again. we can’t get back again. she takes a drink and then she waits, the alcohol it permeates, and soon the cells give way and cancels out the day. i cant keep it all together, stuck underneath the moon. i know i know i know i know, i can’t keep it all together, it’s the moon, stuck underneath the moon, and the siren’s song that ease your madness holds a truth i can’t erase, all alone on your face. every glamorous sunrise throws the planets out of line, a star sign out of whack, a fradulent zodiac, and the godl of wine is crouched down in my room, you let me down i said it,and i’m going donw, and i said, nono nonon onon. i can’t keep it all together, it’s themoon, stuck underneath the moon and i know i know i know i know, i can’t keep it all together, it’s the moon, stuck there’s a memory of a window looking through i see you, searching for something i could never give you , there’s someone who understands you more than i do, a sadness i can’t erase all alone on your face</p>
+
+</div>
+
+<div class="footer">
   
-    
-<div class="picture" style="background-image:url(/images/bg16.jpg);">
+    <p><a href="/15">Previous</a></p>
+  
+  
+    <p><a href="/17">Next</a></p>
+  
+  <p><a href="/1">First</a></p>
+  <p><a href="/">Latest</a></p>
+  <p><a href="/?" id="random">Random</a></p>
+  <p><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></p>
 </div>
 
 
-<div class="words">
-   <p><span id="dropcap">E</span>very thougth that i repent there’;s another chip you haven’t spent, and you’re cashing them in, where do we begin to get clean again. Can we get clean again. I walk home alone with you, in the mood you’re born into, sometimes you let me in, and i take it on the chin, i can’t get clean again. i want to know, can we get clean again. the god of wine comes crashing through the headlights of the car that took you farther than you thought you want to go, we can’t get back again. we can’t get back again. she takes a drink and then she waits, the alcohol it permeates, and soon the cells give way and cancels out the day. i cant keep it all together, stuck underneath the moon. i know i know i know i know, i can’t keep it all together, it’s the moon, stuck underneath the moon, and the siren’s song that ease your madness holds a truth i can’t erase, all alone on your face. every glamorous sunrise throws the planets out of line, a star sign out of whack, a fradulent zodiac, and the godl of wine is crouched down in my room, you let me down i said it,and i’m going donw, and i said, nono nonon onon. i can’t keep it all together, it’s themoon, stuck underneath the moon and i know i know i know i know, i can’t keep it all together, it’s the moon, stuck there’s a memory of a window looking through i see you, searching for something i could never give you , there’s someone who understands you more than i do, a sadness i can’t erase all alone on your face</p>
-
-</div>
-
-<div class="footer"> 
-  <ul>
-      
-       <li><a href="/15">Previous</a></li> 
-      
-      
-       <li><a href="/17">Next</a></li>
-      
-      <li><a href="/1">First</a></li>
-      <li><a href="#" id="random">Random</a></li>
-      <li><a href="/">Home</a></li>
-      <li><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></li>
-      <li id="sup"><img src="/images/gomez.gif" /></li>
-   </ul>
-</div>
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  </div>
 
 </body>
 

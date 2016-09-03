@@ -7,31 +7,43 @@
   <title>withrye</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/style.css" />
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Julius+Sans+One" />  
-  <link rel="icon" href="/images/gomez.ico" />
 
   <script>
-
     window.onload = function() {
-      $('#random').click(function() {
-        window.location = '/' + (Math.floor(Math.random() * 109));
-        return false;
-      });
-    }  
-    
+
+      var random = document.getElementById('random');
+
+
+      if (random.addEventListener) {
+
+        random.addEventListener('click', function(evt) {
+            evt.preventDefault();
+            window.location = '/' + (Math.ceil(Math.random() * 110));
+        }, false);
+      }
+      else {
+        random.attachEvent('onclick', function() {
+            window.location = '/' + (Math.ceil(Math.random() * 110));
+        });
+      }
+
+
+
+    }
   </script>
 
 </head>
 
 <body>
-  
-    
-<div class="picture" style="background-image:url(/images/bg69.jpg);">
-</div>
 
+  <div class="wrapper">
 
-<div class="words">
-   <p>I joined OKCupid last week—rejoined—I had a really old account from five years ago. I read through that profile, and though I recognized bits of myself, I was <i>so</i> not that person. I deleted everything and started over.</p>
+    <div class="header">
+      <a href="/">withrye</a>
+    </div>
+
+    <div class="post">
+  <p>I joined OKCupid last week—rejoined—I had a really old account from five years ago. I read through that profile, and though I recognized bits of myself, I was <i>so</i> not that person. I deleted everything and started over.</p>
 
 <p>After a week of this, it seems to me that dating sites take the really long way around to get to what people want: to meet someone. Meetups would be the better option. They cut right to the meeting-people part and if you don’t find the love of your life, at least you’re doing something fun, instead of just scrolling down an endless wall of faces night after night.</p>
 
@@ -39,27 +51,23 @@
 
 <p>I asked someone what it’s like to be a girl on OKCupid, if she just gets inundated with messages. She said she doesn’t know how it compares to most other girls, but yeah, a lot of people talk to her. It gets old and annoying after a while with guys telling her she’s pretty or has nice eyes. I said I imagine this place could really get her all jaded. She was like, well, it’s like that in real life too, except online no one is even really looking at her when they say those things.</p>
 
-
 </div>
 
-<div class="footer"> 
-  <ul>
-      
-       <li><a href="/68">Previous</a></li> 
-      
-      
-       <li><a href="/70">Next</a></li>
-      
-      <li><a href="/1">First</a></li>
-      <li><a href="#" id="random">Random</a></li>
-      <li><a href="/">Home</a></li>
-      <li><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></li>
-      <li id="sup"><img src="/images/gomez.gif" /></li>
-   </ul>
+<div class="footer">
+  
+    <p><a href="/68">Previous</a></p>
+  
+  
+    <p><a href="/70">Next</a></p>
+  
+  <p><a href="/1">First</a></p>
+  <p><a href="/">Latest</a></p>
+  <p><a href="/?" id="random">Random</a></p>
+  <p><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></p>
 </div>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  </div>
 
 </body>
 

@@ -7,31 +7,43 @@
   <title>withrye</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/style.css" />
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Julius+Sans+One" />  
-  <link rel="icon" href="/images/gomez.ico" />
 
   <script>
-
     window.onload = function() {
-      $('#random').click(function() {
-        window.location = '/' + (Math.floor(Math.random() * 109));
-        return false;
-      });
-    }  
-    
+
+      var random = document.getElementById('random');
+
+
+      if (random.addEventListener) {
+
+        random.addEventListener('click', function(evt) {
+            evt.preventDefault();
+            window.location = '/' + (Math.ceil(Math.random() * 110));
+        }, false);
+      }
+      else {
+        random.attachEvent('onclick', function() {
+            window.location = '/' + (Math.ceil(Math.random() * 110));
+        });
+      }
+
+
+
+    }
   </script>
 
 </head>
 
 <body>
-  
-    
-<div class="picture" style="background-image:url(/images/bg91.jpg);">
-</div>
 
+  <div class="wrapper">
 
-<div class="words">
-   <p>Dear ———,</p>
+    <div class="header">
+      <a href="/">withrye</a>
+    </div>
+
+    <div class="post">
+  <p>Dear ———,</p>
 
 <p>You probably won’t remember me (I don’t know who you are either), but a couple of years ago, I was getting off the L with some groceries, and just as I stepped down the steps, the jolt of disembarking ripped open my paper bags and all my crap fell out. I just kind of stared for a few silent seconds at the pure indifferent-universe-against-me crapfest at my feet. You had gotten off the bus before me and my bleak distress must have disturbed the air or something because you turned around, came back, stooped, and helped me gather up my things. I was so grateful, still am, and wish you the best of life since that time.</p>
 
@@ -44,29 +56,25 @@
 <p>I don’t quite remember if he used that kind stranger’s bag, or used his own spare, but after a few more minutes of repacking and sweeping up some broken glass, he crossed the street and was also on his way.</p>
 
 <p>Sincerely,<br />
-Kevin</p>
-
+———</p>
 
 </div>
 
-<div class="footer"> 
-  <ul>
-      
-       <li><a href="/90">Previous</a></li> 
-      
-      
-       <li><a href="/92">Next</a></li>
-      
-      <li><a href="/1">First</a></li>
-      <li><a href="#" id="random">Random</a></li>
-      <li><a href="/">Home</a></li>
-      <li><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></li>
-      <li id="sup"><img src="/images/gomez.gif" /></li>
-   </ul>
+<div class="footer">
+  
+    <p><a href="/90">Previous</a></p>
+  
+  
+    <p><a href="/92">Next</a></p>
+  
+  <p><a href="/1">First</a></p>
+  <p><a href="/">Latest</a></p>
+  <p><a href="/?" id="random">Random</a></p>
+  <p><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></p>
 </div>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  </div>
 
 </body>
 

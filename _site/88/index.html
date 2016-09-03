@@ -7,31 +7,43 @@
   <title>withrye</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/style.css" />
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Julius+Sans+One" />  
-  <link rel="icon" href="/images/gomez.ico" />
 
   <script>
-
     window.onload = function() {
-      $('#random').click(function() {
-        window.location = '/' + (Math.floor(Math.random() * 109));
-        return false;
-      });
-    }  
-    
+
+      var random = document.getElementById('random');
+
+
+      if (random.addEventListener) {
+
+        random.addEventListener('click', function(evt) {
+            evt.preventDefault();
+            window.location = '/' + (Math.ceil(Math.random() * 110));
+        }, false);
+      }
+      else {
+        random.attachEvent('onclick', function() {
+            window.location = '/' + (Math.ceil(Math.random() * 110));
+        });
+      }
+
+
+
+    }
   </script>
 
 </head>
 
 <body>
-  
-    
-<div class="picture" style="background-image:url(/images/bg88.jpg);">
-</div>
 
+  <div class="wrapper">
 
-<div class="words">
-   <p>Here’s how you get detached. You have some expectation of what’s going to happen. Then it doesn’t happen like you expected. Maybe moreover, what actually happens is the exact opposite of what you anticipated, which is super jarring. Then this happens again, where you have an initial expectation and then the complete opposite happens. By the third time, you start hedging yourself and think, hmm, whatever I’m feeling now, there’s a chance—and not that unlikely of a chance either since it’s happened twice already—that I’m just totally wrong about what’s going to happen so I shouldn’t go 100% in with this feeling. Maybe 95% in. That natural certainty then just goes down from there, until one day, it’s 0, and any suspicion or intuition or gut feeling, any little tinge you feel about what is going to happen is given almost no weight and then there’s no hope anymore. No excitement. And past a certain point, no fear either.</p>
+    <div class="header">
+      <a href="/">withrye</a>
+    </div>
+
+    <div class="post">
+  <p>Here’s how you get detached. You have some expectation of what’s going to happen. Then it doesn’t happen like you expected. Maybe moreover, what actually happens is the exact opposite of what you anticipated, which is super jarring. Then this happens again, where you have an initial expectation and then the complete opposite happens. By the third time, you start hedging yourself and think, hmm, whatever I’m feeling now, there’s a chance—and not that unlikely of a chance either since it’s happened twice already—that I’m just totally wrong about what’s going to happen so I shouldn’t go 100% in with this feeling. Maybe 95% in. That natural certainty then just goes down from there, until one day, it’s 0, and any suspicion or intuition or gut feeling, any little tinge you feel about what is going to happen is given almost no weight and then there’s no hope anymore. No excitement. And past a certain point, no fear either.</p>
 
 <p>I like the Penny Arcade podcast a lot. It’s two people, who know each other really well, just talking. The knowing each other really well part is very important. It means you don’t get the filler talk of two socially conscientious people having a nice conversation for an audience. No, you get two people saying what they mean and what they want and going fast and far because they know the other person can keep up. The podcasts start immediately too; there’s no intro music (you get music at the end—they’re not rude), no ads, no lead-in. You hit play and they start talking. It just feels so good to get that, because it’s so rare. It’s pure content without packaging. I don’t want packaging anymore. Just give it to me!</p>
 
@@ -39,24 +51,21 @@
 
 </div>
 
-<div class="footer"> 
-  <ul>
-      
-       <li><a href="/87">Previous</a></li> 
-      
-      
-       <li><a href="/89">Next</a></li>
-      
-      <li><a href="/1">First</a></li>
-      <li><a href="#" id="random">Random</a></li>
-      <li><a href="/">Home</a></li>
-      <li><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></li>
-      <li id="sup"><img src="/images/gomez.gif" /></li>
-   </ul>
+<div class="footer">
+  
+    <p><a href="/87">Previous</a></p>
+  
+  
+    <p><a href="/89">Next</a></p>
+  
+  <p><a href="/1">First</a></p>
+  <p><a href="/">Latest</a></p>
+  <p><a href="/?" id="random">Random</a></p>
+  <p><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></p>
 </div>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  </div>
 
 </body>
 

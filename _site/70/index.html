@@ -7,31 +7,43 @@
   <title>withrye</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/style.css" />
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Julius+Sans+One" />  
-  <link rel="icon" href="/images/gomez.ico" />
 
   <script>
-
     window.onload = function() {
-      $('#random').click(function() {
-        window.location = '/' + (Math.floor(Math.random() * 109));
-        return false;
-      });
-    }  
-    
+
+      var random = document.getElementById('random');
+
+
+      if (random.addEventListener) {
+
+        random.addEventListener('click', function(evt) {
+            evt.preventDefault();
+            window.location = '/' + (Math.ceil(Math.random() * 110));
+        }, false);
+      }
+      else {
+        random.attachEvent('onclick', function() {
+            window.location = '/' + (Math.ceil(Math.random() * 110));
+        });
+      }
+
+
+
+    }
   </script>
 
 </head>
 
 <body>
-  
-    
-<div class="picture" style="background-image:url(/images/bg70.jpg);">
-</div>
 
+  <div class="wrapper">
 
-<div class="words">
-   <p>Lately, I’ve been trying to do cumulative things. Things like saving money, running more, meeting people. Adding a little, over time. I won’t be ready for the big events, I guess. Like that Bright Eyes song, right, I’d rather be working for a paycheck than waiting to win the lottery.</p>
+    <div class="header">
+      <a href="/">withrye</a>
+    </div>
+
+    <div class="post">
+  <p>Lately, I’ve been trying to do cumulative things. Things like saving money, running more, meeting people. Adding a little, over time. I won’t be ready for the big events, I guess. Like that Bright Eyes song, right, I’d rather be working for a paycheck than waiting to win the lottery.</p>
 
 <p>I went up to the lady sitting behind the sign-in sheet and introduced myself. She gave me a look and asked if I had been here before. I said no, it was my first time. She shrugged. I made a mark next to my name and sat down.</p>
 
@@ -45,24 +57,21 @@
 
 </div>
 
-<div class="footer"> 
-  <ul>
-      
-       <li><a href="/69">Previous</a></li> 
-      
-      
-       <li><a href="/71">Next</a></li>
-      
-      <li><a href="/1">First</a></li>
-      <li><a href="#" id="random">Random</a></li>
-      <li><a href="/">Home</a></li>
-      <li><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></li>
-      <li id="sup"><img src="/images/gomez.gif" /></li>
-   </ul>
+<div class="footer">
+  
+    <p><a href="/69">Previous</a></p>
+  
+  
+    <p><a href="/71">Next</a></p>
+  
+  <p><a href="/1">First</a></p>
+  <p><a href="/">Latest</a></p>
+  <p><a href="/?" id="random">Random</a></p>
+  <p><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></p>
 </div>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  </div>
 
 </body>
 

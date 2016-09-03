@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>withrye</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Julius+Sans+One" />  
+  <link rel="icon" href="/images/gomez.ico" />
+
+  <script>
+
+    window.onload = function() {
+      $('#random').click(function() {
+        window.location = '/' + (Math.floor(Math.random() * {{ site.posts | size }}));
+        return false;
+      });
+    }  
+    
+  </script>
+
+</head>
+
+<body>
+  
+  {{ content }}
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+</body>
+
+</html>

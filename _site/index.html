@@ -7,63 +7,67 @@
   <title>withrye</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/style.css" />
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Julius+Sans+One" />  
-  <link rel="icon" href="/images/gomez.ico" />
 
   <script>
-
     window.onload = function() {
-      $('#random').click(function() {
-        window.location = '/' + (Math.floor(Math.random() * 109));
-        return false;
-      });
-    }  
-    
+
+      var random = document.getElementById('random');
+
+
+      if (random.addEventListener) {
+
+        random.addEventListener('click', function(evt) {
+            evt.preventDefault();
+            window.location = '/' + (Math.ceil(Math.random() * 110));
+        }, false);
+      }
+      else {
+        random.attachEvent('onclick', function() {
+            window.location = '/' + (Math.ceil(Math.random() * 110));
+        });
+      }
+
+
+
+    }
   </script>
 
 </head>
 
 <body>
-  
-       
-      
-     
-   <div class="picture" style="background-image:url(/images/bg109.jpg);">
-   </div>   
-   
-   
-   <div class="words">
-      <p>Lots to say.</p>
 
-<p>I can’t look away from the election, no matter how hard I try and how sick I feel afterward. Riding the wild pollercoaster ride is especially nauseating. Those numbers are absolutely meaningless. When I see something like a 45.5% chance to win the election, how the hell do I relate that .5% to reality? It’s outright arrogant to presume you are so finely attuned to messy human decisions that you can pick out probabilities to the tenth of a percent. Why not say 45.54345345% while you’re at it? It was the same sort of deal during the NBA playoffs and the win probabilities assigned to each game like some knowing declaration. ‘Tis silly. But I can’t look away. I read everything I can and obsess and despair and exalt all over the place with each tick of the forecast.</p>
+  <div class="wrapper">
 
-<p>Trump has this impenetrable armor. It’s really amazing. He can say anything he wants and he doesn’t get hurt. He really wasn’t exaggerating when he said he could shoot someone and not lose voters.</p>
+    <div class="header">
+      <a href="/">withrye</a>
+    </div>
 
-<p>This is the part that makes me wail and gnash my teeth and all that when I read the news. Trump says something stupid. People jump on him and use up lots of energy countering with facts and pointing out his lies and ignorance. That energy is super misspent and wasted. Fact-checking him does nothing. Shaming him does nothing. He is immune to conventional norms of rhetoric and debate. If anything, his supporters like him more. They don’t care about the country’s best interests. They don’t even care about their own best interests. At this point, I think Trump supporters are only driven by the need to teach liberals and immigrants and black people and Muslims and everyone not like them a lesson, and they are willing to burn down the whole house to see everyone writhe in flames. They are tired of losing and it’s their last stand.</p>
+    
 
-<p>So the issue is not how to defeat Trump. That’s almost a sidebar. Trump is a symptom, like a hate-filled pustule that’s swelling to alarming size now, but he’ll pop and ooze out sooner or later. It’s what happens after the election. Win or lose, the electorate that nominated him will still be there.</p>
+   <div class="post">
+      <p>I’m going to rearranging some things here. I wanted to reduce the friction of putting up a new post. It’s hard enough to write something, but to also find an accompanying picture? A wonder there’s anything here at all!</p>
 
-<p>I don’t know how to deal with that. Demographics over time will favor the left, but I don’t think that’s progress if the only way to get a better society is to wait for people who disagree with you to die off.</p>
- 
+<p>I would still have pictures. They would be easier to post too now that they’re inline. I can casually plop down snapshots.</p>
+
+<p><img src="/images/110-hippy-bike.jpg" /></p>
+
+<p>I’ll put back the older pictures later.</p>
+
+<p>Tomorrow, I’m finally going to go move my couch. It’s been years.</p>
+
    </div>
-   
-   <div class="footer"> 
-     <ul>
-         <li><a href="/108">Previous</a></li>      
-         <li><a href="/1">First</a></li>
-         <li><a href="#" id="random">Random</a></li>
-         <li><a href="/">Home</a></li>
-         <li><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></li>
-         <li id="sup"><img src="/images/gomez.gif" /></li>
-      </ul>
+
+   <div class="footer">
+     <p><a href="/109">Previous</a></p>
+     <p><a href="/1">First</a></p>
+     <p><a href="/?" id="random">Random</a></p>
+     <p><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></p>
    </div>
 
 
 
 
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  </div>
 
 </body>
 
