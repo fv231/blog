@@ -7,14 +7,29 @@ a
 img
 { width:100%; }
 
-.header
-{ margin-top:32px; }
-
-.footer
-{ margin-bottom:32px; }
-
 .post p
 { margin:40px 0; }
 
 .wrapper
 { max-width:600px; margin:auto; background:white; padding:40px; font:32px/40px georgia, serif; }
+
+.header
+{ margin-top:20px; }
+
+.footer
+{ margin-bottom:30px; }
+
+@media only screen and (max-width:680px)
+{
+  .wrapper
+  { font-size:24px; line-height:32px; }
+
+  .post p
+  { margin:32px 0; }
+
+  .header
+  { margin-top:0; }
+
+  .footer
+  { margin-bottom:20px; }
+}
