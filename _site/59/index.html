@@ -7,31 +7,43 @@
   <title>withrye</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/style.css" />
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Julius+Sans+One" />  
-  <link rel="icon" href="/images/gomez.ico" />
 
   <script>
-
     window.onload = function() {
-      $('#random').click(function() {
-        window.location = '/' + (Math.floor(Math.random() * 109));
-        return false;
-      });
-    }  
-    
+
+      var random = document.getElementById('random');
+
+
+      if (random.addEventListener) {
+
+        random.addEventListener('click', function(evt) {
+            evt.preventDefault();
+            window.location = '/' + (Math.ceil(Math.random() * 110));
+        }, false);
+      }
+      else {
+        random.attachEvent('onclick', function() {
+            window.location = '/' + (Math.ceil(Math.random() * 110));
+        });
+      }
+
+
+
+    }
   </script>
 
 </head>
 
 <body>
-  
-    
-<div class="picture" style="background-image:url(/images/bg59.jpg);">
-</div>
 
+  <div class="wrapper">
 
-<div class="words">
-   <p><span id="dropcap">T</span>he future is a dark blank wall receding before us, one second per second, just tiny inches in front of our nose. It could become whatever we want.</p>
+    <div class="header">
+      <a href="/">withrye</a>
+    </div>
+
+    <div class="post">
+  <p>The future is a dark blank wall receding before us, one second per second, just tiny inches in front of our nose. It could become whatever we want.</p>
 
 <p>The other day, I lost my keys while out running, and I was like, fuck all. I had run through the park to the beach and was halfway back when I patted my empty, empty pockets. I had no idea how or when they fell out—I would need to backtrack the entire way through the dirt and mud. And it was getting dark.</p>
 
@@ -53,27 +65,21 @@
 
 <p>In my weird heart, I was disappointed that someone had to intervene to afford me this victory. It would have been so nice to think I found the keys all by myself! But I didn’t make sense. I seemed to be preferring not finding my keys without help to finding them with help? I still don’t know.</p>
 
-
-</div>
-
-<div class="footer"> 
-  <ul>
-      
-       <li><a href="/58">Previous</a></li> 
-      
-      
-       <li><a href="/60">Next</a></li>
-      
-      <li><a href="/1">First</a></li>
-      <li><a href="#" id="random">Random</a></li>
-      <li><a href="/">Home</a></li>
-      <li><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></li>
-      <li id="sup"><img src="/images/gomez.gif" /></li>
-   </ul>
 </div>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <p><a href="/58">Previous</a></p>
+
+
+  <p><a href="/60">Next</a></p>
+
+<p><a href="/1">First</a></p>
+<p><a href="/">Latest</a></p>
+<p><a href="/?" id="random">Random</a></p>
+<p><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></p>
+
+
+  </div>
 
 </body>
 

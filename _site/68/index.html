@@ -7,55 +7,61 @@
   <title>withrye</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/style.css" />
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Julius+Sans+One" />  
-  <link rel="icon" href="/images/gomez.ico" />
 
   <script>
-
     window.onload = function() {
-      $('#random').click(function() {
-        window.location = '/' + (Math.floor(Math.random() * 109));
-        return false;
-      });
-    }  
-    
+
+      var random = document.getElementById('random');
+
+
+      if (random.addEventListener) {
+
+        random.addEventListener('click', function(evt) {
+            evt.preventDefault();
+            window.location = '/' + (Math.ceil(Math.random() * 110));
+        }, false);
+      }
+      else {
+        random.attachEvent('onclick', function() {
+            window.location = '/' + (Math.ceil(Math.random() * 110));
+        });
+      }
+
+
+
+    }
   </script>
 
 </head>
 
 <body>
-  
-    
-<div class="picture" style="background-image:url(/images/bg68.jpg);">
-</div>
 
+  <div class="wrapper">
 
-<div class="words">
-   <p>When I go into the bathroom at work, while standing at the urinal, I sometimes think, what if I psych myself out and can’t pee and end up just standing there without making a sound. And that eventually I would have to turn around and leave the bathroom <i>without peeing</i> while the guy waiting for the urinal looks at me and knows my failure.</p>
+    <div class="header">
+      <a href="/">withrye</a>
+    </div>
+
+    <div class="post">
+  <p>When I go into the bathroom at work, while standing at the urinal, I sometimes think, what if I psych myself out and can’t pee and end up just standing there without making a sound. And that eventually I would have to turn around and leave the bathroom <i>without peeing</i> while the guy waiting for the urinal looks at me and knows my failure.</p>
 
 <p>It’s such a relief when I finally do go.</p>
 
-
-</div>
-
-<div class="footer"> 
-  <ul>
-      
-       <li><a href="/67">Previous</a></li> 
-      
-      
-       <li><a href="/69">Next</a></li>
-      
-      <li><a href="/1">First</a></li>
-      <li><a href="#" id="random">Random</a></li>
-      <li><a href="/">Home</a></li>
-      <li><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></li>
-      <li id="sup"><img src="/images/gomez.gif" /></li>
-   </ul>
 </div>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <p><a href="/67">Previous</a></p>
+
+
+  <p><a href="/69">Next</a></p>
+
+<p><a href="/1">First</a></p>
+<p><a href="/">Latest</a></p>
+<p><a href="/?" id="random">Random</a></p>
+<p><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></p>
+
+
+  </div>
 
 </body>
 

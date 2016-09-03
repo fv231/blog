@@ -7,31 +7,43 @@
   <title>withrye</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/style.css" />
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Julius+Sans+One" />  
-  <link rel="icon" href="/images/gomez.ico" />
 
   <script>
-
     window.onload = function() {
-      $('#random').click(function() {
-        window.location = '/' + (Math.floor(Math.random() * 109));
-        return false;
-      });
-    }  
-    
+
+      var random = document.getElementById('random');
+
+
+      if (random.addEventListener) {
+
+        random.addEventListener('click', function(evt) {
+            evt.preventDefault();
+            window.location = '/' + (Math.ceil(Math.random() * 110));
+        }, false);
+      }
+      else {
+        random.attachEvent('onclick', function() {
+            window.location = '/' + (Math.ceil(Math.random() * 110));
+        });
+      }
+
+
+
+    }
   </script>
 
 </head>
 
 <body>
-  
-    
-<div class="picture" style="background-image:url(/images/bg6.jpg);">
-</div>
 
+  <div class="wrapper">
 
-<div class="words">
-   <p><span id="dropcap">I</span> moved to a new spot at work, it’s fabulous. I now have a window! This is a decidedly significant upgrade from the <em>wall</em> I used to stare at. I can see cars crossing the Bay Bridge and a big fat palm tree; all of this overlooking the Embarcadero and its wonderfully distracting activity and foot traffic.</p>
+    <div class="header">
+      <a href="/">withrye</a>
+    </div>
+
+    <div class="post">
+  <p>I moved to a new spot at work, it’s fabulous. I now have a window! This is a decidedly significant upgrade from the <i>wall</i> I used to stare at. I can see cars crossing the Bay Bridge and a big fat palm tree; all of this overlooking the Embarcadero and its wonderfully distracting activity and foot traffic.</p>
 
 <p>My new seat also puts me in the main pod of the production team. I don’t have to warm up the huskies for the overland expedition from my remote outpost of a cubicle to talk to my coworkers anymore. The strange thing is, we still mainly talk through e-mail even though we all sit right next to each other. I just sent a “thanks” to someone five feet away, when in all measures of efficiency and basic social sense, I should have just turned my head and thanked them verbally.</p>
 
@@ -39,24 +51,19 @@
 
 </div>
 
-<div class="footer"> 
-  <ul>
-      
-       <li><a href="/5">Previous</a></li> 
-      
-      
-       <li><a href="/7">Next</a></li>
-      
-      <li><a href="/1">First</a></li>
-      <li><a href="#" id="random">Random</a></li>
-      <li><a href="/">Home</a></li>
-      <li><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></li>
-      <li id="sup"><img src="/images/gomez.gif" /></li>
-   </ul>
-</div>
+
+  <p><a href="/5">Previous</a></p>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <p><a href="/7">Next</a></p>
+
+<p><a href="/1">First</a></p>
+<p><a href="/">Latest</a></p>
+<p><a href="/?" id="random">Random</a></p>
+<p><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></p>
+
+
+  </div>
 
 </body>
 

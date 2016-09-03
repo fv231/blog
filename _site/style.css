@@ -1,20 +1,21 @@
 *
-{ border:0; padding:0; margin:0; }
+{ border:0; padding:0; margin:0; box-sizing:border-box; }
 
-body, html 
-{ height:100%; background:black; }
-
-a 
+a
 { text-decoration:none; color:black; }
 
-p + p
-{ margin-top:30px; }
+.post p
+{ margin:40px 0; }
 
+.wrapper
+{ max-width:800px; margin:auto; background:white; padding:40px; font:32px/40px georgia, serif; }
+
+/*
 .picture
-{ position:relative; height:100%; background-size:cover; background-position:center center; background-repeat:no-repeat; }
+{ position:relative; }
 
 .words
-{ position:relative; top:0; padding:225px 100px 175px; width:100%; background:white; box-sizing:border-box; }
+{ position:relative; top:0; padding:225px 100px 175px; width:100%; background:cornsilk; box-sizing:border-box; }
 
 .words p
 { margin-left:auto; margin-right:auto; max-width:750px; font:30px/45px georgia, serif; }
@@ -25,13 +26,13 @@ p + p
 .footer
 { position:relative; text-transform:uppercase; padding:200px 0px 150px; background-color:black; font:32px 'Julius Sans One', sans-serif; color:#999; letter-spacing:4px; text-align:center; min-height:100%; box-sizing:border-box; }
 
-.footer a               
+.footer a
 { text-decoration:none; color:#999; }
 
 .footer li
 { list-style:none; margin-bottom:20px; }
 
-.footer a:hover, .footer a:active  
+.footer a:hover, .footer a:active
 { color:white; }
 
 .footer #sup
@@ -42,11 +43,11 @@ p + p
    .words
    { padding:75px 45px 70px; }
 
-   .words p 
+   .words p
    { font-size:20px; line-height:30px; }
 
    .words p:first-child:first-letter
-   { font-size:120px; margin-left:-24px; }  
+   { font-size:120px; margin-left:-24px; }
 
    .footer
    { font-size:24px; padding:85px 0px 55px; }
@@ -54,14 +55,4 @@ p + p
    .footer #sup
    { padding-top:20px; }
 
-}
-
-
-
-
-
-
-
-
-
-
+}*/

@@ -7,52 +7,59 @@
   <title>withrye</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/style.css" />
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Julius+Sans+One" />  
-  <link rel="icon" href="/images/gomez.ico" />
 
   <script>
-
     window.onload = function() {
-      $('#random').click(function() {
-        window.location = '/' + (Math.floor(Math.random() * 109));
-        return false;
-      });
-    }  
-    
+
+      var random = document.getElementById('random');
+
+
+      if (random.addEventListener) {
+
+        random.addEventListener('click', function(evt) {
+            evt.preventDefault();
+            window.location = '/' + (Math.ceil(Math.random() * 110));
+        }, false);
+      }
+      else {
+        random.attachEvent('onclick', function() {
+            window.location = '/' + (Math.ceil(Math.random() * 110));
+        });
+      }
+
+
+
+    }
   </script>
 
 </head>
 
 <body>
-  
-    
-<div class="picture" style="background-image:url(/images/bg90.jpg);">
+
+  <div class="wrapper">
+
+    <div class="header">
+      <a href="/">withrye</a>
+    </div>
+
+    <div class="post">
+  <p>Fear is a horrible reason to choose something over something else. I really think it’s so consistently bad and harmful to your happiness that whenever you face a super hard decision, and going back and forth between two things, make it a rule to choose the scary one. Fear tells you to stay. Go. Fear tells you to run. Make your stand. This won’t be the best choice all the time, maybe even not most of the time, and it’ll probably lead to lots of reckless behavior, but I have a really good feeling about it. It seems like it’ll make your life more interesting.</p>
+
 </div>
 
 
-<div class="words">
-   <p>Fear is a horrible reason to choose something over something else. I really think it’s so consistently bad and harmful to your happiness that whenever you face a super hard decision, and going back and forth between two things, make it a rule to choose the scary one. Fear tells you to stay. Go. Fear tells you to run. Make your stand. This won’t be the best choice all the time, maybe even not most of the time, and it’ll probably lead to lots of reckless behavior, but I have a really good feeling about it. It seems like it’ll make your life more interesting.</p>
-
-</div>
-
-<div class="footer"> 
-  <ul>
-      
-       <li><a href="/89">Previous</a></li> 
-      
-      
-       <li><a href="/91">Next</a></li>
-      
-      <li><a href="/1">First</a></li>
-      <li><a href="#" id="random">Random</a></li>
-      <li><a href="/">Home</a></li>
-      <li><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></li>
-      <li id="sup"><img src="/images/gomez.gif" /></li>
-   </ul>
-</div>
+  <p><a href="/89">Previous</a></p>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <p><a href="/91">Next</a></p>
+
+<p><a href="/1">First</a></p>
+<p><a href="/">Latest</a></p>
+<p><a href="/?" id="random">Random</a></p>
+<p><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></p>
+
+
+  </div>
 
 </body>
 

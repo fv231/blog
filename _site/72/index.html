@@ -7,31 +7,43 @@
   <title>withrye</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/style.css" />
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Julius+Sans+One" />  
-  <link rel="icon" href="/images/gomez.ico" />
 
   <script>
-
     window.onload = function() {
-      $('#random').click(function() {
-        window.location = '/' + (Math.floor(Math.random() * 109));
-        return false;
-      });
-    }  
-    
+
+      var random = document.getElementById('random');
+
+
+      if (random.addEventListener) {
+
+        random.addEventListener('click', function(evt) {
+            evt.preventDefault();
+            window.location = '/' + (Math.ceil(Math.random() * 110));
+        }, false);
+      }
+      else {
+        random.attachEvent('onclick', function() {
+            window.location = '/' + (Math.ceil(Math.random() * 110));
+        });
+      }
+
+
+
+    }
   </script>
 
 </head>
 
 <body>
-  
-    
-<div class="picture" style="background-image:url(/images/bg72.jpg);">
-</div>
 
+  <div class="wrapper">
 
-<div class="words">
-   <p>I’m going to talk about money now.</p>
+    <div class="header">
+      <a href="/">withrye</a>
+    </div>
+
+    <div class="post">
+  <p>I’m going to talk about money now.</p>
 
 <p>I’m trying to get as much money as I can so I can stop working. Not to accomplish some noble goal. Not to save the world. Not to whatever. What I truly, madly (deeply, even) want is to gain full power over my own time.</p>
 
@@ -41,27 +53,21 @@
 
 <p>So, to get to all that, I’ve been bringing lunch to work instead of eating out. It was kind of great, and I felt good about acting so directly to change my fate. Then it got sucky. I hate it. I hate everything about bringing lunch to work. I hate making it every day. I hate having to carry it on the bus. I hate eating the boring things. I hate washing the tupperware afterward. In fact, I hate bringing my own lunch so much that I will give up a year’s worth of retirement so I can eat out for lunch. Fuck it.</p>
 
-
-</div>
-
-<div class="footer"> 
-  <ul>
-      
-       <li><a href="/71">Previous</a></li> 
-      
-      
-       <li><a href="/73">Next</a></li>
-      
-      <li><a href="/1">First</a></li>
-      <li><a href="#" id="random">Random</a></li>
-      <li><a href="/">Home</a></li>
-      <li><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></li>
-      <li id="sup"><img src="/images/gomez.gif" /></li>
-   </ul>
 </div>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <p><a href="/71">Previous</a></p>
+
+
+  <p><a href="/73">Next</a></p>
+
+<p><a href="/1">First</a></p>
+<p><a href="/">Latest</a></p>
+<p><a href="/?" id="random">Random</a></p>
+<p><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></p>
+
+
+  </div>
 
 </body>
 

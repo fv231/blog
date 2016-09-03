@@ -7,31 +7,43 @@
   <title>withrye</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/style.css" />
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Julius+Sans+One" />  
-  <link rel="icon" href="/images/gomez.ico" />
 
   <script>
-
     window.onload = function() {
-      $('#random').click(function() {
-        window.location = '/' + (Math.floor(Math.random() * 109));
-        return false;
-      });
-    }  
-    
+
+      var random = document.getElementById('random');
+
+
+      if (random.addEventListener) {
+
+        random.addEventListener('click', function(evt) {
+            evt.preventDefault();
+            window.location = '/' + (Math.ceil(Math.random() * 110));
+        }, false);
+      }
+      else {
+        random.attachEvent('onclick', function() {
+            window.location = '/' + (Math.ceil(Math.random() * 110));
+        });
+      }
+
+
+
+    }
   </script>
 
 </head>
 
 <body>
-  
-    
-<div class="picture" style="background-image:url(/images/bg67.jpg);">
-</div>
 
+  <div class="wrapper">
 
-<div class="words">
-   <p>Sometimes sloths grab their own arms thinking they’re tree branches then fall to their deaths what?</p>
+    <div class="header">
+      <a href="/">withrye</a>
+    </div>
+
+    <div class="post">
+  <p>Sometimes sloths grab their own arms thinking they’re tree branches then fall to their deaths what?</p>
 
 <p>A: Cheer up B. There’s always tomorrow. Life is like opening a brand new wrapped box when you wake up. That’s why it’s called the present! Ha ha!
 B: Right, except when you open the box, you find that there’s a great big turd in there.
@@ -60,27 +72,21 @@ C: …</p>
 
 <p>The editor-in-chief did resign eventually, but by then it was spring and everyone was graduating. Still, we patted ourselves on the back for a job well done and for saving the paper.</p>
 
-
-</div>
-
-<div class="footer"> 
-  <ul>
-      
-       <li><a href="/66">Previous</a></li> 
-      
-      
-       <li><a href="/68">Next</a></li>
-      
-      <li><a href="/1">First</a></li>
-      <li><a href="#" id="random">Random</a></li>
-      <li><a href="/">Home</a></li>
-      <li><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></li>
-      <li id="sup"><img src="/images/gomez.gif" /></li>
-   </ul>
 </div>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <p><a href="/66">Previous</a></p>
+
+
+  <p><a href="/68">Next</a></p>
+
+<p><a href="/1">First</a></p>
+<p><a href="/">Latest</a></p>
+<p><a href="/?" id="random">Random</a></p>
+<p><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></p>
+
+
+  </div>
 
 </body>
 

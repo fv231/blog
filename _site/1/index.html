@@ -7,31 +7,43 @@
   <title>withrye</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/style.css" />
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Julius+Sans+One" />  
-  <link rel="icon" href="/images/gomez.ico" />
 
   <script>
-
     window.onload = function() {
-      $('#random').click(function() {
-        window.location = '/' + (Math.floor(Math.random() * 109));
-        return false;
-      });
-    }  
-    
+
+      var random = document.getElementById('random');
+
+
+      if (random.addEventListener) {
+
+        random.addEventListener('click', function(evt) {
+            evt.preventDefault();
+            window.location = '/' + (Math.ceil(Math.random() * 110));
+        }, false);
+      }
+      else {
+        random.attachEvent('onclick', function() {
+            window.location = '/' + (Math.ceil(Math.random() * 110));
+        });
+      }
+
+
+
+    }
   </script>
 
 </head>
 
 <body>
-  
-    
-<div class="picture" style="background-image:url(/images/bg1.jpg);">
-</div>
 
+  <div class="wrapper">
 
-<div class="words">
-   <p><span id="dropcap">S</span>aw Alice in Wonderland the other day. When it was over, Elbert was like, “That’s so unrealistic.” He was referring to Alice being hired as an trading company’s apprentice at the end lol, never mind Wonderland.</p>
+    <div class="header">
+      <a href="/">withrye</a>
+    </div>
+
+    <div class="post">
+  <p>Saw Alice in Wonderland the other day. When it was over, Elbert was like, “That’s so unrealistic.” He was referring to Alice being hired as an trading company’s apprentice at the end lol, never mind Wonderland.</p>
 
 <p>My desktop is in cardiac arrest and things look pretty grim. After days of reading random forum posts for a cure—the method of choice for solving any tech issue—and performing the extremely risky BIOS flashing, twice!, the computer is still out cold. My only likely option now is to get another motherboard, erg. In the meantime, I’m getting reacquainted with my seven-year-old lappy from college, which is such a trooper.</p>
 
@@ -41,22 +53,17 @@
 
 </div>
 
-<div class="footer"> 
-  <ul>
-      
-      
-       <li><a href="/2">Next</a></li>
-      
-      <li><a href="/1">First</a></li>
-      <li><a href="#" id="random">Random</a></li>
-      <li><a href="/">Home</a></li>
-      <li><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></li>
-      <li id="sup"><img src="/images/gomez.gif" /></li>
-   </ul>
-</div>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <p><a href="/2">Next</a></p>
+
+<p><a href="/1">First</a></p>
+<p><a href="/">Latest</a></p>
+<p><a href="/?" id="random">Random</a></p>
+<p><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></p>
+
+
+  </div>
 
 </body>
 
