@@ -22,14 +22,14 @@ img
 @media only screen and (max-width:680px)
 {
   .wrapper
-  { font-size:24px; line-height:32px; }
+  { font-size:20px; line-height:28px; }
 
   .post p
-  { margin:32px 0; }
+  { margin:28px 0; }
 
   .header
   { margin-top:0; }
 
   .footer
-  { margin-bottom:20px; }
+  { margin-bottom:12px; }
 }
