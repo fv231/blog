@@ -15,13 +15,13 @@
     if (randLink.addEventListener) {
       randLink.addEventListener('click', function(evt) {
         evt.preventDefault();
-        window.location = '/' + (Math.ceil(Math.random() * 110));
+        window.location = '/' + (Math.ceil(Math.random() * 111));
       }, false);
     }
     else {
       randLink.attachEvent('onclick', function(evt) {
         evt.preventDefault();
-        window.location = '/' + (Math.ceil(Math.random() * 110));
+        window.location = '/' + (Math.ceil(Math.random() * 111));
       });
     }
   }
@@ -64,7 +64,7 @@
   
 
   
-    <p><a href="/110">Latest</a></p>
+    <p><a href="/111">Latest</a></p>
   
 
   <p><a href="/?" id="random">Random</a></p>
