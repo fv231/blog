@@ -4,11 +4,11 @@ layout: default
 
 {% for post in site.posts limit:1 %}
 
-   <div class="post">
+   <div class="column post">
       {{ site.posts.first.content }}
    </div>
 
-   <div class="footer">
+   <div class="column footer">
      <p><a href="{{ post.previous.url }}">Previous</a></p>
      <p><a href="{{site.posts.last.url}}">First</a></p>
      <p><a href="/?" id="random">Random</a></p>

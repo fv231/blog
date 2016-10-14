@@ -7,14 +7,17 @@ a
 img
 { width:100%; }
 
-.post p
-{ margin:40px 0; }
-
 .wrapper
-{ max-width:600px; margin:auto; background:white; padding:40px; font:32px/40px georgia, serif; }
+{ max-width:600px; margin:auto; background:white; padding:40px; font:32px/40px georgia, serif; display:flex; }
+
+.column
+{ flex:none; }
 
 .header
 { margin-top:20px; }
+
+.post p
+{ margin:40px 0; }
 
 .footer
 { margin-bottom:30px; }
