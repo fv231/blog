@@ -1,20 +1,26 @@
 *
 { border:0; padding:0; margin:0; }
 
+html, body
+{ height:100%; }
+
 a
 { text-decoration:none; color:black; }
 
 img
 { width:100%; }
 
-.post p
-{ margin:40px 0; }
+.picture
+{ position:fixed; top:0; left:0; width:100%; height:100%; background-size:cover; background-position:center center; background-repeat:no-repeat; }
 
 .wrapper
-{ max-width:600px; margin:auto; background:white; padding:40px; font:32px/40px georgia, serif; }
+{ position:relative; top:100%; max-width:600px; margin:auto; background:white; padding:40px; font:32px/40px georgia, serif; }
 
 .header
 { margin-top:20px; }
+
+.post p
+{ margin:40px 0; }
 
 .footer
 { margin-bottom:30px; }
