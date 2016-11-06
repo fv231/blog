@@ -50,7 +50,13 @@ layout: default
 </div>
 
 <div class="column3">
-  {% for post in site.posts %}
-    <a href="{{ post.url }}">{{ post.title }}</a><br />
-  {% endfor %}
+
+  <div class="nav">
+    {% for post in site.posts %}
+      <a href="{{ post.url }}">{{ post.title }}</a><br />
+    {% endfor %}
+  </div>
+
+  <div class="gomez">X</div>
+
 </div>
