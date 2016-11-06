@@ -2,16 +2,21 @@
 layout: default
 ---
 
+<div class="post">
+  {{ site.posts.first.content }}
+</div>
 
+<div class="footer">
 
-   <div class="post">
-      {{ site.posts.first.content }}
-   </div>
+  {% for post in site.posts limit:1 %}
+    {% if post.previous %}
+      <p><a href="{{ post.previous.url }}">Previous</a></p>
+      <p><a href="{{ site.posts.last.url }}">First</a></p>
+    {% endif %}
+  {% endfor %}
 
-   <div class="footer">
-     <p><a href="{{ post.previous.url }}">Previous</a></p>
-     <p><a href="{{ site.posts.last.url }}">First</a></p>
-     <p><a href="/?" id="random">Random</a></p>
-     <p><a href="/">Home</a></p>
-     <p><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></p>
-   </div>
+  <p><a href="/?" id="random">Random</a></p>
+  <p><a href="/">Home</a></p>
+  <p><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></p>
+  
+</div>

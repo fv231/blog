@@ -9,19 +9,19 @@ layout: default
 <div class="footer">
 
   {% if page.previous %}
-    <p><a href="{{page.previous.url}}">Previous</a></p>
+    <p><a href="{{ page.previous.url }}">Previous</a></p>
   {% endif %}
 
   {% if page.next %}
-    <p><a href="{{page.next.url}}">Next</a></p>
+    <p><a href="{{ page.next.url }}">Next</a></p>
   {% endif %}
 
   {% if page.previous %}
-    <p><a href="{{site.posts.last.url}}">First</a></p>
+    <p><a href="{{ site.posts.last.url }}">First</a></p>
   {% endif %}
 
   {% if page.next %}
-    <p><a href="{{site.posts.first.url}}">Latest</a></p>
+    <p><a href="{{ site.posts.first.url }}">Latest</a></p>
   {% endif %}
 
   <p><a href="/?" id="random">Random</a></p>
