@@ -37,25 +37,52 @@
 
     <div class="picture" style="background-image:url({{ site.baseurl }}/images/bg{{ page.title }}.jpg);" /></div>
 
-    <div class="email">
-      <a href="mailto:heysup@withrye.com">heysup@withrye.com</a>
+    <div class="bar1">
+
+      <div class="email">
+        <a href="mailto:heysup@withrye.com">heysup@withrye.com</a>
+      </div>
+
+      <div class="title">
+        <a href="{{ page.url }}">#{{ page.title }}</a>
+      </div>
+
+      {% if page.previous %}
+      <div class="previous">
+        <a href="{{ page.previous.url }}">Previous</a>
+      </div>
+      {% endif %}
+
     </div>
+
+
   </div>
 
   <div class="column2">
 
-    <div class="header">
-      <a href="/">withrye</a>
+    <div class="bar2">
+
+      {% if page.next %}
+      <div class="next">
+        <a href="{{ page.next.url }}">Next</a>
+      </div>
+      {% endif %}
+
+      <div class="header">
+        <a href="/">withrye</a>
+      </div>
+
     </div>
 
-    {{ content }}
+    <div class="post">
+      {{ content }}
+    </div>
 
   </div>
 
   <div class="column3">
     {% for post in site.posts %}
-      {% assign current_year = post.date | date: '%Y' %}
-        <a href="{{ post.url }}">{{ post.title }}</a><br />
+      <a href="{{ post.url }}">{{ post.title }}</a><br />
     {% endfor %}
   </div>
 
