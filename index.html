@@ -2,19 +2,47 @@
 layout: default
 ---
 
-{{ site.posts.first.content }}
+<div class="column1">
 
-<!-- <div class="footer">
+  <div class="picture" style="background-image:url({{ site.baseurl }}/images/bg{{ page.title }}.jpg);" /></div>
 
-  {% for post in site.posts limit:1 %}
-    {% if post.previous %}
-      <p><a href="{{ post.previous.url }}">Previous</a></p>
-      <p><a href="{{ site.posts.last.url }}">First</a></p>
-    {% endif %}
+  <div class="bar1">
+
+    <div class="email">
+      <a href="mailto:heysup@withrye.com">heysup@withrye.com</a>
+    </div>
+
+    <div class="title">
+      <a href="{{ site.posts.first.url }}">#{{ site.posts.first.title }}</a>
+    </div>
+
+    <div class="previous">
+      <a href="{{ site.posts.previous.url }}">Previous</a>
+    </div>
+
+  </div>
+
+
+</div>
+
+<div class="column2">
+
+  <div class="bar2">
+
+    <div class="header">
+      <a href="/">withrye</a>
+    </div>
+
+  </div>
+
+  <div class="post">
+    {{ site.posts.first.content }}
+  </div>
+
+</div>
+
+<div class="column3">
+  {% for post in site.posts %}
+    <a href="{{ post.url }}">{{ post.title }}</a><br />
   {% endfor %}
-
-  <p><a href="/?" id="random">Random</a></p>
-  <p><a href="/">Home</a></p>
-  <p><a href="mailto:heysup@withrye.com">heysup@withrye.com</a></p>
-
-</div> -->
+</div>
