@@ -35,9 +35,7 @@
 
   <div class="column1">
 
-    <div class="picture">
-      <img src="{{ site.baseurl }}/images/bg{{ page.title }}.jpg" />
-    </div>
+    <div class="picture" style="background-image:url({{ site.baseurl }}/images/bg{{ page.title }}.jpg);" /></div>
 
     <div class="email">
       <a href="mailto:heysup@withrye.com">heysup@withrye.com</a>
@@ -55,6 +53,10 @@
   </div>
 
   <div class="column3">
+    {% for post in site.posts %}
+      {% assign current_year = post.date | date: '%Y' %}
+        <a href="{{ post.url }}">{{ post.title }}</a><br />
+    {% endfor %}
   </div>
 
 </div></div>

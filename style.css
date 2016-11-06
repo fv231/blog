@@ -7,41 +7,41 @@ html, body, .wrapper, .wrapper2
 a
 { text-decoration:none; color:black; }
 
-.post p
-{ margin:40px 0; }
-
 .wrapper
-{ zpadding:10px; font:32px/40px georgia, serif; display:flex; border:10px solid black; }
+{ font:20px/30px georgia, serif; display:flex; border:10px solid black; }
 
 .wrapper2
 { border:10px solid white; }
 
-.header
-{ margin-top:20px; }
+.column1
+{ border-right:10px solid black; display:flex; flex-direction:column; flex:1 100%; }
 
-.picture img
-{ width:100%; }
+.picture
+{ background-size:cover; flex:1 100%; background-position:center center; border:10px solid white; }
+
+.email
+{ border-top:10px solid black; padding:10px; }
+
+.column2
+{ display:flex; flex-direction:column; flex:none; width:350px; border-right:10px solid black; }
+
+.header
+{ padding:10px; border-bottom:10px solid black; }
 
 .post
-{ overflow:scroll; }
+{ overflow:scroll; padding:10px; }
+
+.post p
+{ margin:0 0 30px; }
+
+.post p:last-child
+{ margin-bottom:10px; }
+
+.column3
+{ overflow:scroll; flex:none; text-align:center; padding:10px; }
 
 .footer
 { margin-bottom:30px; }
-
-.column1
-{ display:flex; flex-direction:column; }
-
-.picture
-{ flex:1 1 100%; }
-
-.email
-{ border-top:10px solid black; border-right:10px solid black; }
-
-.column2
-{ display:flex; flex-direction:column; }
-
-/*.column3
-{ border:10px solid black; }*/
 
 /*@media only screen and (max-width:680px)
 {
