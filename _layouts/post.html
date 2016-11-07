@@ -58,6 +58,6 @@ layout: default
 </div>
 
 <script>
-  var special = document.getElementById("a{{ page.title }}");
-  special.scrollIntoView(true);
+  var nav = document.getElementById("a{{ page.title }}");
+  nav.scrollIntoView({block: "start", behavior: "instant"});
 </script>
