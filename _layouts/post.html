@@ -53,10 +53,15 @@ layout: default
 
   <div class="nav">
     {% for post in site.posts %}
-      <a href="{{ post.url }}">{{ post.title }}</a><br />
+      <a id="a{{ post.title }}" href="{{ post.url }}">{{ post.title }}</a><br />
     {% endfor %}
   </div>
 
   <div class="gomez">X</div>
 
 </div>
+
+<script>
+  var special = document.getElementById("a{{ page.title }}");
+  special.scrollIntoView(true);
+</script>
