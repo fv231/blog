@@ -61,6 +61,9 @@ a
   .gomez
   { background-image:url(images/gomez.gif); background-color:lightgreen;  background-size:cover; flex:none; background-position:center center; border-top:10px solid black; padding:10px; text-indent:-9999px; background-origin: content-box; background-repeat:no-repeat; }
 
+.highlight
+{ background:black; color:white; }
+
 @media only screen and (max-width:850px)
 {
   .wrapper

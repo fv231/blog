@@ -53,7 +53,7 @@ layout: default
 
   <div class="nav">
     {% for post in site.posts %}
-      <a id="a{{ post.title }}" href="{{ post.url }}">{{ post.title }}</a><br />
+      <a id="a{{ post.title }}" {% if page.title == post.title %}class="highlight"{% endif %} href="{{ post.url }}">{{ post.title }}</a><br />
     {% endfor %}
   </div>
 
