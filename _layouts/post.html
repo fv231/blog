@@ -12,10 +12,6 @@ layout: default
       <a href="mailto:heysup@withrye.com">heysup@withrye.com</a>
     </div>
 
-    <div class="title">
-      <a href="{{ page.url }}">#{{ page.title }}</a>
-    </div>
-
     {% if page.previous %}
     <div class="previous">
       <a href="{{ page.previous.url }}">Previous</a>
@@ -53,7 +49,7 @@ layout: default
 
   <div class="nav">
     {% for post in site.posts %}
-      <a id="a{{ post.title }}" {% if page.title == post.title %}class="highlight"{% endif %} href="{{ post.url }}">{{ post.title }}</a><br />
+      <a id="a{{ post.title }}" {% if page.title == post.title %}class="highlight"{% endif %} href="{{ post.url }}">{{ post.title }}</a>
     {% endfor %}
   </div>
 

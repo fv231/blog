@@ -23,7 +23,7 @@ a
   { border-top:10px solid black; display:flex; }
 
     .email
-    { flex:1 100%; border-right:10px solid black; padding:10px; }
+    { flex:1 100%; padding:10px; }
 
     .title
     { flex:none; padding:10px; }
@@ -56,13 +56,16 @@ a
 { overflow:scroll; flex:none; text-align:center; display:flex; flex-direction:column; }
 
   .nav
-  { overflow:scroll; flex:1 100%; text-align:center; padding:10px; }
+  { overflow:scroll; flex:1 100%; text-align:center; }
+
+  .nav a
+  { display:block; padding-right:10px; padding-left:10px; margin:5px 0; }
 
   .gomez
   { background-image:url(images/gomez.gif); background-color:lightgreen;  background-size:cover; flex:none; background-position:center center; border-top:10px solid black; padding:10px; text-indent:-9999px; background-origin: content-box; background-repeat:no-repeat; }
 
 .highlight
-{ background:black; color:white; }
+{ background:black; color:white; padding-top:10px; padding-bottom:10px; border-bottom:10px solid black; margin:0 !important; }
 
 @media only screen and (max-width:850px)
 {
