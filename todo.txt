@@ -1,2 +1,1 @@
 - mobile
-- vertical resizing bug in safari
