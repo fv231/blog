@@ -14,16 +14,16 @@ a
 { border:10px solid white; }
 
 .column1
-{ border-right:10px solid black; display:flex; flex-direction:column; flex:1 100%; }
+{ border-right:10px solid black; display:flex; flex-direction:column; flex:auto; }
 
   .picture
-  { background-size:cover; flex:1 100%; background-position:center center; }
+  { background-size:cover; flex:auto; background-position:center center; }
 
   .bar1
-  { border-top:10px solid black; display:flex; }
+  { border-top:10px solid black; display:flex; flex:none; }
 
     .email
-    { flex:1 100%; padding:10px; }
+    { flex:auto; padding:10px; }
 
     .title
     { flex:none; padding:10px; }
@@ -41,10 +41,10 @@ a
     { flex:none; padding:10px; border-right:10px solid black; }
 
     .header
-    { padding:10px; flex:1 100%; text-align:right; }
+    { padding:10px; flex:auto; text-align:right; }
 
   .post
-  { padding:10px 40px 10px 10px; flex:1 100%; overflow-x:hidden; overflow-y:scroll; width:370px; }
+  { padding:10px 40px 10px 10px; flex:auto; overflow-x:hidden; overflow-y:scroll; width:370px; }
 
   .post::-webkit-scrollbar
   { display:none; }
@@ -59,7 +59,7 @@ a
 { flex:none; display:flex; flex-direction:column; overflow:hidden; width:60px; }
 
   .nav
-  { overflow-x:hidden; overflow-y:scroll; flex:1 100%; text-align:center; width:90px; padding-right:30px; }
+  { overflow-x:hidden; overflow-y:scroll; flex:auto; text-align:center; width:90px; padding-right:30px; }
 
   .nav::-webkit-scrollbar
   { display:none; }
