@@ -44,28 +44,28 @@ a
     { padding:10px; flex:1 100%; text-align:right; }
 
   .post
-  { padding:10px; flex:1 100%; overflow-x:hidden; overflow-y:scroll; width:340px; }
+  { padding:10px 40px 10px 10px; flex:1 100%; overflow-x:hidden; overflow-y:scroll; width:370px; }
 
   .post::-webkit-scrollbar
   { display:none; }
 
   .post p
-  { margin:0 0 30px; }
+  { margin:0 0 30px; width:320px; }
 
   .post p:last-child
   { margin-bottom:10px; }
 
 .column3
-{ flex:none; display:flex; flex-direction:column; overflow:hidden; width:70px; }
+{ flex:none; display:flex; flex-direction:column; overflow:hidden; width:60px; }
 
   .nav
-  { overflow-x:hidden; overflow-y:scroll; flex:1 100%; text-align:center; width:100px; padding-right:30px; }
+  { overflow-x:hidden; overflow-y:scroll; flex:1 100%; text-align:center; width:90px; padding-right:30px; }
 
   .nav::-webkit-scrollbar
   { display:none; }
 
   .nav a
-  { width:70px; display:block; padding-right:10px; padding-left:10px; margin:5px 0; }
+  { width:60px; display:block; padding-right:10px; padding-left:10px; margin:5px 0; }
 
   .gomez
   { background:lightgreen url(images/gomez.gif) center center no-repeat; background-size:cover; flex:none;  border-top:10px solid black; padding:10px; text-indent:-9999px; background-origin: content-box; }
