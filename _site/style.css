@@ -8,7 +8,7 @@ a
 { text-decoration:none; color:black; }
 
 .wrapper
-{ font:18px/26px georgia, serif; display:flex; border:10px solid black; }
+{ font:20px/26px 'Alegreya', serif; display:flex; border:10px solid black; }
 
 .wrapper2
 { border:10px solid white; }
@@ -26,13 +26,13 @@ a
   { border-top:10px solid black; display:flex; flex:none; }
 
     .email
-    { flex:auto; padding:10px; }
+    { flex:auto; padding:15px 20px; }
 
     #random
-    { flex:none; padding:10px; border-left:10px solid black; }
+    { flex:none; padding:15px 20px; border-left:10px solid black; }
 
     .previous
-    { flex:none; padding:10px; border-left:10px solid black; }
+    { flex:none; padding:15px 20px; border-left:10px solid black; }
 
 .column2
 { display:flex; flex-direction:column; flex:none; width:350px; border-right:10px solid black; overflow:hidden; }
@@ -41,13 +41,13 @@ a
   { border-bottom:10px solid black; display:flex; flex:none; }
 
     .next
-    { flex:none; padding:10px; border-right:10px solid black; }
+    { flex:none; padding:15px 20px; border-right:10px solid black; }
 
     .header
-    { padding:10px; flex:auto; text-align:right; }
+    { padding:15px 20px; flex:auto; text-align:right; }
 
   .post
-  { padding:10px 40px 10px 10px; flex:auto; overflow-x:hidden; overflow-y:scroll; width:370px; }
+  { padding:20px 40px 20px 20px; flex:auto; overflow-x:hidden; overflow-y:scroll; width:370px; }
 
   .post::-webkit-scrollbar
   { display:none; }
@@ -62,10 +62,10 @@ a
   }
 
   .post p
-  { margin:0 0 26px; width:320px; }
+  { margin:0 0 26px; width:300px; }
 
   .post p:last-child
-  { margin-bottom:10px; }
+  { margin-bottom:20px; }
 
 .column3
 { flex:none; display:flex; flex-direction:column; overflow:hidden; width:60px; }
@@ -80,10 +80,10 @@ a
   { width:60px; display:block; padding-right:10px; padding-left:10px; margin:5px 0; }
 
   .gomez
-  { background:lightgreen url(images/gomez.gif) center center no-repeat; background-size:cover; flex:none;  border-top:10px solid black; padding:10px;  background-origin:content-box; box-sizing:content-box; height:26px; }
+  { background:lightgreen url(images/gomez.gif) center center no-repeat; background-size:cover; flex:none;  border-top:10px solid black; padding:10px;  background-origin:content-box; box-sizing:content-box; height:36px; }
 
 .highlight
-{ background:black; color:white; padding-top:10px; padding-bottom:10px; border-bottom:10px solid black; margin:0 !important; }
+{ background:black; color:white; padding-top:15px; padding-bottom:15px; border-bottom:10px solid black; margin:0 !important; }
 
 .first
 { border-bottom:none; }
@@ -91,7 +91,7 @@ a
 .m-footer
 { display:none; }
 
-@media only screen and (max-width:900px)
+@media only screen and (max-width:920px)
 {
 
   .html, body, .wrapper, .wrapper2
@@ -107,7 +107,7 @@ a
   { display:none; }
 
   .post
-  { padding:26px; }
+  { padding:20px; }
 
   .post p:last-child
   { margin-bottom:0; }
@@ -122,21 +122,21 @@ a
   { border-top:10px solid black; display:flex; text-align:center; }
 
     .m-next
-    { flex:1 1 100%; padding:26px 0; border-left:10px solid black; }
+    { flex:1 1 100%; padding:20px 0; border-left:10px solid black; }
 
     #m-random
-    { flex:1 1 100%; padding:26px 0; border:none; }
+    { flex:1 1 100%; padding:20px 0; border:none; }
 
     .m-previous
-    { flex:1 1 100%; padding:26px 0; border-right:10px solid black; }
+    { flex:1 1 100%; padding:20px 0; border-right:10px solid black; }
 
   .m-email
-  { padding:26px; border-top:10px solid black; text-align:center; }
+  { padding:20px; border-top:10px solid black; text-align:center; }
 
   .m-gomez
-  { background:lightgreen; padding:26px; text-align:center; border-top:10px solid black; height:26px; box-sizing:content-box; }
+  { background:lightgreen; padding:20px; text-align:center; border-top:10px solid black; height:26px; box-sizing:content-box; }
 
   .m-gomez img
-  { margin-top:-12px; }
+  { margin-top:-9px; }
 
 }
