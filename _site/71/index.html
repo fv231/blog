@@ -11,6 +11,7 @@
 
 <script>
   window.onload = function() {
+    
     var randLink = document.getElementById('random');
     if (randLink.addEventListener) {
       randLink.addEventListener('click', function(evt) {
@@ -24,26 +25,25 @@
         window.location = '/' + (Math.ceil(Math.random() * 114));
       });
     }
-  }
-</script>
 
-<script>
-  window.onload = function() {
-    var randLink = document.getElementById('m-random');
-    if (randLink.addEventListener) {
-      randLink.addEventListener('click', function(evt) {
+    var mrandLink = document.getElementById('m-random');
+    if (mrandLink.addEventListener) {
+      mrandLink.addEventListener('click', function(evt) {
         evt.preventDefault();
         window.location = '/' + (Math.ceil(Math.random() * 114));
       }, false);
     }
     else {
-      randLink.attachEvent('onclick', function(evt) {
+      mrandLink.attachEvent('onclick', function(evt) {
         evt.preventDefault();
         window.location = '/' + (Math.ceil(Math.random() * 114));
       });
     }
+
   }
 </script>
+
+
 
 </head>
 
