@@ -4,7 +4,9 @@ layout: default
 
 <div class="column1">
 
-  <div class="picture" style="background-image:url({{ site.baseurl }}/images/bg{{ page.title }}.jpg);" /></div>
+  <div class="picture" style="background-image:url({{ site.baseurl }}/images/bg{{ page.title }}.jpg);" />
+    <img src="{{ site.baseurl }}/images/bg{{ page.title }}.jpg" />
+  </div>
 
   <div class="bar1">
 
@@ -52,5 +54,31 @@ layout: default
   </div>
 
   <div class="gomez">X</div>
+
+</div>
+
+<div class="m-footer">
+
+  <div class="m-nav">
+
+    {% for post in site.posts limit:1 %}
+      <div class="m-previous">
+        <a href="{{ post.previous.url }}">Previous</a>
+      </div>
+    {% endfor %}
+
+    <div id="m-random">
+      <a href="/?">Random</a>
+    </div>
+
+  </div>
+
+  <div class="m-email">
+    <a href="mailto:heysup@withrye.com">heysup@withrye.com</a>
+  </div>
+
+  <div class="m-gomez">
+    <img src="{{ site.baseurl }}/images/gomez.gif" />
+  </div>
 
 </div>

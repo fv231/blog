@@ -5,13 +5,31 @@
 <head>
 
 <meta charset="utf-8" />
-<title>withrye {{ page.title }}</title>
+<title>withrye</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="/style.css" />
 
 <script>
   window.onload = function() {
     var randLink = document.getElementById('random');
+    if (randLink.addEventListener) {
+      randLink.addEventListener('click', function(evt) {
+        evt.preventDefault();
+        window.location = '/' + (Math.ceil(Math.random() * {{ site.posts | size }}));
+      }, false);
+    }
+    else {
+      randLink.attachEvent('onclick', function(evt) {
+        evt.preventDefault();
+        window.location = '/' + (Math.ceil(Math.random() * {{ site.posts | size }}));
+      });
+    }
+  }
+</script>
+
+<script>
+  window.onload = function() {
+    var randLink = document.getElementById('m-random');
     if (randLink.addEventListener) {
       randLink.addEventListener('click', function(evt) {
         evt.preventDefault();

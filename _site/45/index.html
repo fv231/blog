@@ -5,13 +5,31 @@
 <head>
 
 <meta charset="utf-8" />
-<title>withrye 45</title>
+<title>withrye</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="/style.css" />
 
 <script>
   window.onload = function() {
     var randLink = document.getElementById('random');
+    if (randLink.addEventListener) {
+      randLink.addEventListener('click', function(evt) {
+        evt.preventDefault();
+        window.location = '/' + (Math.ceil(Math.random() * 114));
+      }, false);
+    }
+    else {
+      randLink.attachEvent('onclick', function(evt) {
+        evt.preventDefault();
+        window.location = '/' + (Math.ceil(Math.random() * 114));
+      });
+    }
+  }
+</script>
+
+<script>
+  window.onload = function() {
+    var randLink = document.getElementById('m-random');
     if (randLink.addEventListener) {
       randLink.addEventListener('click', function(evt) {
         evt.preventDefault();
@@ -35,7 +53,9 @@
 
   <div class="column1">
 
-  <div class="picture" style="background-image:url(/images/bg45.jpg);" /></div>
+  <div class="picture" style="background-image:url(/images/bg45.jpg);" />
+    <img src="/images/bg45.jpg" />
+  </div>
 
   <div class="bar1">
 
@@ -333,6 +353,38 @@
   var nav = document.getElementById("a45");
   nav.scrollIntoView({block: "start", behavior: "instant"});
 </script>
+
+<div class="m-footer">
+
+  <div class="m-nav">
+
+    
+      <div class="m-previous">
+        <a href="/113">Previous</a>
+      </div>
+    
+
+    <div id="m-random">
+      <a href="/?">Random</a>
+    </div>
+
+    
+    <div class="m-next">
+      <a href="/46">Next</a>
+    </div>
+    
+
+  </div>
+
+  <div class="m-email">
+    <a href="mailto:heysup@withrye.com">heysup@withrye.com</a>
+  </div>
+
+  <div class="m-gomez">
+    <img src="/images/gomez.gif" />
+  </div>
+
+</div>
 
 
 </div></div>

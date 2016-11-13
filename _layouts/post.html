@@ -4,7 +4,9 @@ layout: default
 
 <div class="column1">
 
-  <div class="picture" style="background-image:url({{ site.baseurl }}/images/bg{{ page.title }}.jpg);" /></div>
+  <div class="picture" style="background-image:url({{ site.baseurl }}/images/bg{{ page.title }}.jpg);" />
+    <img src="{{ site.baseurl }}/images/bg{{ page.title }}.jpg" />
+  </div>
 
   <div class="bar1">
 
@@ -65,3 +67,35 @@ layout: default
   var nav = document.getElementById("a{{ page.title }}");
   nav.scrollIntoView({block: "start", behavior: "instant"});
 </script>
+
+<div class="m-footer">
+
+  <div class="m-nav">
+
+    {% for post in site.posts limit:1 %}
+      <div class="m-previous">
+        <a href="{{ post.previous.url }}">Previous</a>
+      </div>
+    {% endfor %}
+
+    <div id="m-random">
+      <a href="/?">Random</a>
+    </div>
+
+    {% if page.next %}
+    <div class="m-next">
+      <a href="{{ page.next.url }}">Next</a>
+    </div>
+    {% endif %}
+
+  </div>
+
+  <div class="m-email">
+    <a href="mailto:heysup@withrye.com">heysup@withrye.com</a>
+  </div>
+
+  <div class="m-gomez">
+    <img src="{{ site.baseurl }}/images/gomez.gif" />
+  </div>
+
+</div>
