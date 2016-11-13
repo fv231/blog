@@ -125,6 +125,9 @@ a
   { padding:26px; border-top:10px solid black; text-align:center; }
 
   .m-gomez
-  { background:lightgreen; padding:26px; text-align:center; border-top:10px solid black; }
+  { background:lightgreen; padding:26px; text-align:center; border-top:10px solid black; height:1em; box-sizing:content-box; }
+
+  .m-gomez img
+  { margin-top:-15px; }
 
 }

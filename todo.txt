@@ -1,1 +1,1 @@
-- mobile
+- Drop cap with 10px block font sans-serif

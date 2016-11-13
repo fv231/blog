@@ -40,7 +40,7 @@ layout: default
     {% endif %}
 
     <div class="header">
-      <a href="/">withrye</a>
+      <a href="/" title="Home">withrye</a>
     </div>
 
   </div>
@@ -72,11 +72,11 @@ layout: default
 
   <div class="m-nav">
 
-    {% for post in site.posts limit:1 %}
+    {% if page.previous %}
       <div class="m-previous">
-        <a href="{{ post.previous.url }}">Previous</a>
+        <a href="{{ page.previous.url }}">Previous</a>
       </div>
-    {% endfor %}
+    {% endif %}
 
     <div id="m-random">
       <a href="/?">Random</a>
@@ -95,7 +95,7 @@ layout: default
   </div>
 
   <div class="m-gomez">
-    <img src="{{ site.baseurl }}/images/gomez.gif" />
+    <a href="/" title="Home"><img src="{{ site.baseurl }}/images/gomez.gif" /></a>
   </div>
 
 </div>
