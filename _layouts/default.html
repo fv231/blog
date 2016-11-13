@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html>
+<html lang="en">
 
 <head>
 
@@ -9,8 +9,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="/style.css" />
 
+<link href="https://fonts.googleapis.com/css?family=Alegreya%7CYantramanav:900" rel="stylesheet">
+
 <script>
   window.onload = function() {
+
     var randLink = document.getElementById('random');
     if (randLink.addEventListener) {
       randLink.addEventListener('click', function(evt) {
@@ -24,19 +27,35 @@
         window.location = '/' + (Math.ceil(Math.random() * {{ site.posts | size }}));
       });
     }
+
+    var mrandLink = document.getElementById('m-random');
+    if (mrandLink.addEventListener) {
+      mrandLink.addEventListener('click', function(evt) {
+        evt.preventDefault();
+        window.location = '/' + (Math.ceil(Math.random() * {{ site.posts | size }}));
+      }, false);
+    }
+    else {
+      mrandLink.attachEvent('onclick', function(evt) {
+        evt.preventDefault();
+        window.location = '/' + (Math.ceil(Math.random() * {{ site.posts | size }}));
+      });
+    }
+
   }
 </script>
+
+
 
 </head>
 
 <body>
 
-<div class="wrapper">
-  <div class="header">
-    <a href="/">withrye</a>
-  </div>
+<div class="wrapper2"><div class="wrapper">
+
   {{ content }}
-</div>
+
+</div></div>
 
 </body>
 
