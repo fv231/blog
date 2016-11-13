@@ -5,8 +5,8 @@ layout: default
 <div class="column1">
 
   {% for post in site.posts limit:1 %}
-    <div class="picture" style="background-image:url({{ site.baseurl }}/images/bg{{ site.posts.first.title }}.jpg);" />
-      <img src="{{ site.baseurl }}/images/bg{{ site.posts.first.title }}.jpg" />
+    <div class="picture" style="background-image:url({{ site.baseurl }}/images/bg{{ site.posts.first.title }}.jpg);">
+      <img src="{{ site.baseurl }}/images/bg{{ site.posts.first.title }}.jpg" alt="" />
     </div>
   {% endfor %}
 
@@ -80,7 +80,7 @@ layout: default
   </div>
 
   <div class="m-gomez">
-    <a href="/" title="Home"><img src="{{ site.baseurl }}/images/gomez.gif" /></a>
+    <a href="/" title="Home"><img src="{{ site.baseurl }}/images/gomez.gif" alt="" /></a>
   </div>
 
 </div>
