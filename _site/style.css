@@ -8,7 +8,7 @@ a
 { text-decoration:none; color:black; }
 
 .wrapper
-{ font:20px/28px georgia, serif; display:flex; border:10px solid black; }
+{ font:18px/26px georgia, serif; display:flex; border:10px solid black; }
 
 .wrapper2
 { border:10px solid white; }
@@ -52,8 +52,17 @@ a
   .post::-webkit-scrollbar
   { display:none; }
 
+  .post p:first-child:first-letter
+  { font:60px/42px 'Yantramanav', sans-serif; float:left; padding:7px 8px 0 0; }
+
+  @-moz-document url-prefix()
+  {
+    .post p:first-child:first-letter
+    { padding-top:7px; }
+  }
+
   .post p
-  { margin:0 0 28px; width:320px; }
+  { margin:0 0 26px; width:320px; }
 
   .post p:last-child
   { margin-bottom:10px; }
@@ -71,7 +80,7 @@ a
   { width:60px; display:block; padding-right:10px; padding-left:10px; margin:5px 0; }
 
   .gomez
-  { background:lightgreen url(images/gomez.gif) center center no-repeat; background-size:cover; flex:none;  border-top:10px solid black; padding:10px; text-indent:-9999px; background-origin: content-box; }
+  { background:lightgreen url(images/gomez.gif) center center no-repeat; background-size:cover; flex:none;  border-top:10px solid black; padding:10px;  background-origin:content-box; box-sizing:content-box; height:26px; }
 
 .highlight
 { background:black; color:white; padding-top:10px; padding-bottom:10px; border-bottom:10px solid black; margin:0 !important; }
@@ -125,9 +134,9 @@ a
   { padding:26px; border-top:10px solid black; text-align:center; }
 
   .m-gomez
-  { background:lightgreen; padding:26px; text-align:center; border-top:10px solid black; height:1em; box-sizing:content-box; }
+  { background:lightgreen; padding:26px; text-align:center; border-top:10px solid black; height:26px; box-sizing:content-box; }
 
   .m-gomez img
-  { margin-top:-15px; }
+  { margin-top:-12px; }
 
 }

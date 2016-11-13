@@ -4,9 +4,11 @@ layout: default
 
 <div class="column1">
 
-  <div class="picture" style="background-image:url({{ site.baseurl }}/images/bg{{ page.title }}.jpg);" />
-    <img src="{{ site.baseurl }}/images/bg{{ page.title }}.jpg" />
-  </div>
+  {% for post in site.posts limit:1 %}
+    <div class="picture" style="background-image:url({{ site.baseurl }}/images/bg{{ site.posts.first.title }}.jpg);" />
+      <img src="{{ site.baseurl }}/images/bg{{ site.posts.first.title }}.jpg" />
+    </div>
+  {% endfor %}
 
   <div class="bar1">
 
@@ -53,7 +55,7 @@ layout: default
     {% endfor %}
   </div>
 
-  <div class="gomez">X</div>
+  <div class="gomez"></div>
 
 </div>
 
