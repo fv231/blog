@@ -104,7 +104,7 @@ a
   { flex-direction:column; font:18px/26px georgia, serif; }
 
   .column1, .column2, .column3, .picture img, .post, .post p
-  { display:block; flex:none; width:100%; border:none; }
+  { display:block; flex:none; width:100%; overflow:visible; border:none; }
 
   .nav, .bar1, .bar2, .gomez
   { display:none; }
