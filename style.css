@@ -55,6 +55,12 @@ a
   .post p:first-child:first-letter
   { font:60px/42px 'Yantramanav', sans-serif; float:left; padding:7px 8px 0 0; }
 
+  .post p
+  { margin:0 0 26px; width:300px; }
+
+  .post p:last-child
+  { margin-bottom:0; }
+
   @-moz-document url-prefix()
   {
     .post p:first-child:first-letter
@@ -63,12 +69,6 @@ a
     .post p:last-child
     { margin-bottom:20px; }
   }
-
-  .post p
-  { margin:0 0 26px; width:300px; }
-
-  .post p:last-child
-  { margin-bottom:0; }
 
 .column3
 { flex:none; display:flex; flex-direction:column; overflow:hidden; width:60px; }
