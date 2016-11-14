@@ -59,13 +59,16 @@ a
   {
     .post p:first-child:first-letter
     { padding-top:7px; }
+        
+    .post p:last-child
+    { margin-bottom:20px; }
   }
 
   .post p
   { margin:0 0 26px; width:300px; }
 
   .post p:last-child
-  { margin-bottom:20px; }
+  { margin-bottom:0; }
 
 .column3
 { flex:none; display:flex; flex-direction:column; overflow:hidden; width:60px; }
