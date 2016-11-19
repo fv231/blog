@@ -55,17 +55,20 @@ a
   .post p:first-child:first-letter
   { font:60px/42px 'Yantramanav', sans-serif; float:left; padding:7px 8px 0 0; }
 
-  @-moz-document url-prefix()
-  {
-    .post p:first-child:first-letter
-    { padding-top:7px; }
-  }
-
   .post p
   { margin:0 0 26px; width:300px; }
 
   .post p:last-child
-  { margin-bottom:20px; }
+  { margin-bottom:0; }
+
+  @-moz-document url-prefix()
+  {
+    .post p:first-child:first-letter
+    { padding-top:7px; }
+        
+    .post p:last-child
+    { margin-bottom:20px; }
+  }
 
 .column3
 { flex:none; display:flex; flex-direction:column; overflow:hidden; width:60px; }
@@ -101,7 +104,7 @@ a
   { flex-direction:column; font:18px/26px georgia, serif; }
 
   .column1, .column2, .column3, .picture img, .post, .post p
-  { display:block; flex:none; width:100%; overflow:auto; border:none; }
+  { display:block; flex:none; width:100%; overflow:visible; border:none; }
 
   .nav, .bar1, .bar2, .gomez
   { display:none; }
