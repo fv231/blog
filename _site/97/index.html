@@ -20,13 +20,13 @@
     if (randLink.addEventListener) {
       randLink.addEventListener('click', function(evt) {
         evt.preventDefault();
-        window.location = '/' + (Math.ceil(Math.random() * 119));
+        window.location = '/' + (Math.ceil(Math.random() * 120));
       }, false);
     }
     else {
       randLink.attachEvent('onclick', function(evt) {
         evt.preventDefault();
-        window.location = '/' + (Math.ceil(Math.random() * 119));
+        window.location = '/' + (Math.ceil(Math.random() * 120));
       });
     }
 
@@ -34,13 +34,13 @@
     if (mrandLink.addEventListener) {
       mrandLink.addEventListener('click', function(evt) {
         evt.preventDefault();
-        window.location = '/' + (Math.ceil(Math.random() * 119));
+        window.location = '/' + (Math.ceil(Math.random() * 120));
       }, false);
     }
     else {
       mrandLink.attachEvent('onclick', function(evt) {
         evt.preventDefault();
-        window.location = '/' + (Math.ceil(Math.random() * 119));
+        window.location = '/' + (Math.ceil(Math.random() * 120));
       });
     }
 
@@ -117,6 +117,8 @@
 <div class="column3">
 
   <div class="nav">
+    
+      <a id="a120"  href="/120">120</a>
     
       <a id="a119"  href="/119">119</a>
     
