@@ -1,0 +1,13 @@
+title: withrye
+email: heysup@withrye.com
+description: ""
+baseurl: ""
+url: ""
+permalink: /:title
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"

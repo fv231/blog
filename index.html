@@ -1,0 +1,86 @@
+---
+layout: default
+---
+
+<div class="column1">
+
+  {% for post in site.posts limit:1 %}
+    <div class="picture" style="background-image:url({{ site.baseurl }}/images/bg{{ site.posts.first.title }}.jpg);">
+      <img src="{{ site.baseurl }}/images/bg{{ site.posts.first.title }}.jpg" alt="" />
+    </div>
+  {% endfor %}
+
+  <div class="bar1">
+
+    <div class="email">
+      <a href="mailto:heysup@withrye.com">heysup@withrye.com</a>
+    </div>
+
+    <div id="random">
+      <a href="/?">Random</a>
+    </div>
+
+    {% for post in site.posts limit:1 %}
+      <div class="previous">
+        <a href="{{ post.previous.url }}">Previous</a>
+      </div>
+    {% endfor %}
+
+  </div>
+
+
+</div>
+
+<div class="column2">
+
+  <div class="bar2">
+
+    <div class="header">
+      <a href="/" title="Home">withrye</a>
+    </div>
+
+  </div>
+
+  <div class="post">
+    {{ site.posts.first.content }}
+  </div>
+
+</div>
+
+<div class="column3">
+
+  <div class="nav">
+    {% for post in site.posts %}
+      <a id="a{{ post.title }}" {% if site.posts.first.title == post.title %}class="highlight {% if post.title == '1' %}first{% endif %}"{% endif %} href="{{ post.url }}">{{ post.title }}</a>
+    {% endfor %}
+  </div>
+
+  <div class="gomez"></div>
+
+</div>
+
+<div class="m-footer">
+
+  <div class="m-nav">
+
+    {% for post in site.posts limit:1 %}
+      <div class="m-previous">
+        <a href="{{ post.previous.url }}">Previous</a>
+      </div>
+    {% endfor %}
+
+    <div id="m-random">
+      <a href="/?">Random</a>
+    </div>
+
+  </div>
+
+  <div class="m-email">
+    <a href="mailto:heysup@withrye.com">heysup@withrye.com</a>
+  </div>
+
+  <div class="m-gomez">
+    <a href="/" title="Home"><img src="{{ site.baseurl }}/images/gomez.gif" alt="" /></a>
+  </div>
+
+</div>
