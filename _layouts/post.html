@@ -14,6 +14,12 @@ layout: default
       <a href="mailto:heysup@withrye.com">heysup@withrye.com</a>
     </div>
 
+    {% if page.next %}
+    <div class="next">
+      <a href="{{ page.next.url }}">Next</a>
+    </div>
+    {% endif %}
+    
     <div id="random">
       <a href="/?">Random</a>
     </div>
@@ -32,12 +38,6 @@ layout: default
 <div class="column2">
 
   <div class="bar2">
-
-    {% if page.next %}
-    <div class="next">
-      <a href="{{ page.next.url }}">Next</a>
-    </div>
-    {% endif %}
 
     <div class="header">
       <a href="/" title="Home">withrye</a>
