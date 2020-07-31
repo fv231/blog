@@ -19,10 +19,6 @@ layout: default
       <a href="{{ page.next.url }}">Next</a>
     </div>
     {% endif %}
-    
-    <div id="random">
-      <a href="/?">Random</a>
-    </div>
 
     {% if page.previous %}
     <div class="previous">
@@ -30,20 +26,25 @@ layout: default
     </div>
     {% endif %}
 
+    <div id="random">
+      <a href="/?">Random</a>
+    </div>
+
+    <div class="first">
+      <a href="/1" title="First">First</a>
+    </div>
+
+    <div class="home">
+      <a href="/" title="Home">Home</a>
+    </div>
+
+
   </div>
 
 
 </div>
 
 <div class="column2">
-
-  <div class="bar2">
-
-    <div class="header">
-      <a href="/" title="Home">withrye</a>
-    </div>
-
-  </div>
 
   <div class="post">
     {{ content }}
@@ -58,8 +59,6 @@ layout: default
       <a id="a{{ post.title }}" {% if page.title == post.title %}class="highlight {% if post.title == '1' %}first{% endif %}"{% endif %} href="{{ post.url }}">{{ post.title }}</a>
     {% endfor %}
   </div>
-
-  <div class="gomez"></div>
 
 </div>
 

@@ -14,37 +14,27 @@
 <link href="https://fonts.googleapis.com/css?family=Alegreya%7CYantramanav:900" rel="stylesheet">
 
 <script>
-  window.onload = function() {
 
-    var randLink = document.getElementById('random');
-    if (randLink.addEventListener) {
-      randLink.addEventListener('click', function(evt) {
+  function randomLink(randomLinkId) {
+    if (randomLinkId.addEventListener) {
+      randomLinkId.addEventListener('click', function(evt) {
         evt.preventDefault();
         window.location = '/' + (Math.ceil(Math.random() * {{ site.posts | size }}));
       }, false);
     }
     else {
-      randLink.attachEvent('onclick', function(evt) {
+      randomLinkId.attachEvent('onclick', function(evt) {
         evt.preventDefault();
         window.location = '/' + (Math.ceil(Math.random() * {{ site.posts | size }}));
       });
     }
-
-    var mrandLink = document.getElementById('m-random');
-    if (mrandLink.addEventListener) {
-      mrandLink.addEventListener('click', function(evt) {
-        evt.preventDefault();
-        window.location = '/' + (Math.ceil(Math.random() * {{ site.posts | size }}));
-      }, false);
-    }
-    else {
-      mrandLink.attachEvent('onclick', function(evt) {
-        evt.preventDefault();
-        window.location = '/' + (Math.ceil(Math.random() * {{ site.posts | size }}));
-      });
-    }
-
   }
+
+  window.onload = function() {
+    randomLink(document.getElementById('random'));
+    randomLink(document.getElementById('m-random'));
+  }
+
 </script>
 
 

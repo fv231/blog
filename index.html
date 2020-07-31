@@ -16,15 +16,23 @@ layout: default
       <a href="mailto:heysup@withrye.com">heysup@withrye.com</a>
     </div>
 
-    <div id="random">
-      <a href="/?">Random</a>
-    </div>
-
     {% for post in site.posts limit:1 %}
       <div class="previous">
         <a href="{{ post.previous.url }}">Previous</a>
       </div>
     {% endfor %}
+
+    <div id="random">
+      <a href="/?">Random</a>
+    </div>
+
+    <div class="first">
+      <a href="/1" title="First">First</a>
+    </div>
+
+    <div class="home">
+      <a href="/" title="Home">Home</a>
+    </div>
 
   </div>
 
@@ -32,14 +40,6 @@ layout: default
 </div>
 
 <div class="column2">
-
-  <div class="bar2">
-
-    <div class="header">
-      <a href="/" title="Home">withrye</a>
-    </div>
-
-  </div>
 
   <div class="post">
     {{ site.posts.first.content }}
@@ -55,8 +55,6 @@ layout: default
     {% endfor %}
   </div>
 
-  <div class="gomez"></div>
-
 </div>
 
 <div class="m-footer">
@@ -64,7 +62,7 @@ layout: default
   <div class="m-nav">
 
     {% for post in site.posts limit:1 %}
-      <div class="m-previous">
+      <div>
         <a href="{{ post.previous.url }}">Previous</a>
       </div>
     {% endfor %}
@@ -73,14 +71,18 @@ layout: default
       <a href="/?">Random</a>
     </div>
 
+    <div>
+      <a href="/1" title="First">First</a>
+    </div>
+
+    <div>
+      <a href="/" title="Home">Home</a>
+    </div>
+
   </div>
 
   <div class="m-email">
     <a href="mailto:heysup@withrye.com">heysup@withrye.com</a>
-  </div>
-
-  <div class="m-gomez">
-    <a href="/" title="Home"><img src="{{ site.baseurl }}/images/gomez.gif" alt="" /></a>
-  </div>
+  </div>  
 
 </div>
