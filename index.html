@@ -50,8 +50,12 @@ layout: default
 <div class="column3">
 
   <div class="nav">
-    {% for post in site.posts %}
-      <a id="a{{ post.title }}" {% if site.posts.first.title == post.title %}class="highlight {% if post.title == '1' %}first{% endif %}"{% endif %} href="{{ post.url }}">{{ post.title }}</a>
+    {% for post in site.posts limit:1 %}
+
+      {{ post.title }}
+
+      <!-- <a id="a{{ post.title }}" {% if site.posts.first.title == post.title %}class="highlight {% if post.title == '1' %}first{% endif %}"{% endif %} href="{{ post.url }}">{{ post.title }}</a> -->
+
     {% endfor %}
   </div>
 
@@ -83,6 +87,6 @@ layout: default
 
   <div class="m-email">
     <a href="mailto:heysup@withrye.com">heysup@withrye.com</a>
-  </div>  
+  </div>
 
 </div>
