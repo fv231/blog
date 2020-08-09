@@ -11,7 +11,7 @@ a
 { border:10px solid white; }
 
 .wrapper2
-{ display:flex; font:20px/26px 'Alegreya', serif; border:10px solid black; }
+{ display:flex; font:22px/28px 'Alegreya', serif; border:10px solid black; }
 
 .picture
 { flex:auto; background-size:cover; background-position:center center; border-right:10px solid black; }
@@ -20,7 +20,7 @@ a
 { display:none; }
 
 .title
-{ font:50px/50px 'Yantramanav', sans-serif; float:right; padding:0 0 0 10px; margin:0 !important; }
+{ font:56px/56px 'Yantramanav', sans-serif; float:right; padding:0 0 0 10px; margin:0 !important; }
 
 .post
 { flex:none; overflow-y:scroll; width:400px; padding:20px; }
