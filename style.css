@@ -23,13 +23,10 @@ a
 { font:56px/52px 'Yantramanav', sans-serif; float:right; padding:0 0 0 10px; margin:0 !important; }
 
 .post
-{ flex:none; overflow-y:scroll; width:400px; padding:20px; }
+{ flex:none; overflow-y:scroll; width:400px; padding:20px 20px 0 20px; }
 
 .post p
 { margin:0 0 20px 0; }
-
-.post p:last-child
-{ margin-bottom:0; }
 
 .post::-webkit-scrollbar
 { display:none; }
