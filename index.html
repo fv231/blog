@@ -2,86 +2,15 @@
 layout: default
 ---
 
-<div class="row1">
-
-  <div class="column1">
-    {% for post in site.posts limit:1 %}
-      <div class="picture" style="background-image:url({{ site.baseurl }}/images/bg{{ site.posts.first.title }}.jpg);">
-        <img src="{{ site.baseurl }}/images/bg{{ site.posts.first.title }}.jpg" alt="" />
-      </div>
-    {% endfor %}
-  </div>
-
-  <div class="column2">
-    <div class="post">
-      {{ site.posts.first.content }}
-    </div>
-  </div>
-
-  <!-- <div class="column3">
-    <div class="nav">
-      {% for post in site.posts limit:1 %}
-        {{ post.title }}
-      {% endfor %}
-    </div>
-  </div> -->
-
+{% for post in site.posts limit:1 %}
+<div class="picture" style="background-image:url({{ site.baseurl }}/images/bg{{ post.title }}.jpg);">
+  <img src="{{ site.baseurl }}/images/bg{{ post.title }}.jpg" />
 </div>
 
-
-<div class="row2">
-
-  <div class="email">
-    <a href="mailto:heysup@withrye.com">heysup@withrye.com</a>
-  </div>
-
-  {% for post in site.posts limit:1 %}
-    <div class="previous">
-      <a href="{{ post.previous.url }}">Previous</a>
-    </div>
-  {% endfor %}
-
-  <div id="random">
-    <a href="/?">Random</a>
-  </div>
-
-  <div class="first">
-    <a href="/1" title="First">First</a>
-  </div>
-
-  <div class="home">
-    <a href="/" title="Home">Home</a>
-  </div>
-
+<div class="post">
+  <p class="title" id="random">
+    <a href="/?">{{ post.title }}</a>.
+  </p>
+  {{ post.content }}
 </div>
-
-
-<div class="m-footer">
-
-  <div class="m-nav">
-
-    {% for post in site.posts limit:1 %}
-      <div>
-        <a href="{{ post.previous.url }}">Previous</a>
-      </div>
-    {% endfor %}
-
-    <div id="m-random">
-      <a href="/?">Random</a>
-    </div>
-
-    <div>
-      <a href="/1" title="First">First</a>
-    </div>
-
-    <div>
-      <a href="/" title="Home">Home</a>
-    </div>
-
-  </div>
-
-  <div class="m-email">
-    <a href="mailto:heysup@withrye.com">heysup@withrye.com</a>
-  </div>
-
-</div>
+{% endfor %}

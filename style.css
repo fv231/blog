@@ -1,100 +1,53 @@
 *
 { border:0; padding:0; margin:0; box-sizing:border-box; }
 
-html, body, .wrapper
+html, body, .wrapper, .wrapper2
 { height:100%; }
 
 a
 { text-decoration:none; color:black; }
 
 .wrapper
-{ font:20px/26px 'Alegreya', serif; display:flex; flex-direction:column; }
+{ border:10px solid white; }
 
-.row1
-{ display:flex; height:calc(100% - 56px); }
+.wrapper2
+{ display:flex; font:20px/26px 'Alegreya', serif; border:10px solid black; }
 
-  .column1
-  { display:flex; flex:auto; }
+.picture
+{ flex:auto; background-size:cover; background-position:center center; border-right:10px solid black; }
 
-    .picture
-    { background-size:cover; flex:auto; background-position:center center; }
-
-    .picture img
-    { display:none; }
-
-  .column2
-  { flex:none; overflow-y:scroll; width:380px; }
-
-    .post
-    { padding:20px; flex:auto; overflow-x:hidden; overflow-y:scroll; }
-
-    .post::-webkit-scrollbar
-    { display:none; }
-
-    .post p
-    { margin:0 0 26px; }
-
-    .post p:last-child
-    { margin-bottom:0; }
-
-  .column3
-  { flex:none; width:50px; }
-
-    .nav
-    { padding:20px 0 0 10px; }
-
-.row2
-{ display:flex; flex:none; }
-
-  .email
-  { flex:auto; padding:15px 20px; }
-
-  #random, .home, .previous, .next, .first
-  { flex:none; padding:15px 20px; }
-
-.m-footer
+.picture img
 { display:none; }
 
-@media only screen and (max-width:520px)
-{
+.title
+{ font:50px/50px 'Yantramanav', sans-serif; float:right; padding:0 0 0 10px; margin:0 !important; }
 
+.post
+{ flex:none; overflow-y:scroll; width:400px; padding:20px; }
+
+.post p
+{ margin:0 0 20px 0; }
+
+.post p:last-child
+{ margin-bottom:0; }
+
+.post::-webkit-scrollbar
+{ display:none; }
+
+@media only screen and (max-width:700px)
+{
   .html, body, .wrapper, .wrapper2
   { height:auto; }
 
-  .wrapper
-  { flex-direction:column; font:18px/26px georgia, serif; }
-
-  .column1, .column2, .column3, .picture img, .post, .post p
-  { display:block; flex:none; width:100%; overflow:visible; border:none; }
-
-  .nav, .bar1, .bar2, .gomez
-  { display:none; }
+  .wrapper2
+  { display:block; max-width:420px; margin:0 auto; }
 
   .post
-  { padding:20px; }
-
-  .post p:last-child
-  { margin-bottom:0; }
+  { width:100%; overflow:visible; border-top:10px solid black; }
 
   .picture
-  { border-bottom:10px solid black; }
+  { border:none; }
 
-  .m-footer
-  { display:block; }
-
-  .m-nav
-  { border-top:10px solid black; text-align:center; }
-
-  #m-random, .m-nav div
-  { margin:20px 0; }
-
-  .m-email
-  { padding:20px; border-top:10px solid black; text-align:center; }
-
-  .m-gomez
-  { background:lightgreen; padding:20px; text-align:center; border-top:10px solid black; height:26px; box-sizing:content-box; }
-
-  .m-gomez img
-  { margin-top:-9px; }
-
+  .picture img
+  { display:block; width:100%; }
 }
