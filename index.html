@@ -8,9 +8,12 @@ layout: default
 </div>
 
 <div class="post">
-  <p class="title" id="random">
-    <a href="/?" title="?">{{ post.title }}</a>.
-  </p>
+  <div class="float-helper"></div>
+  <div class="title-container">
+    <div class="title" id="random">
+      <a href="/?" title="?">{{ post.title }}</a>.
+    </div>
+  </div>
   {{ post.content }}
 </div>
 {% endfor %}

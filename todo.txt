@@ -1,2 +1,1 @@
-- Optimize responsive content. Get rid of need for m-footer
-- Use grid
+- Flow wrap text around fixed element upon scroll

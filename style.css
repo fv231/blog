@@ -19,8 +19,11 @@ a
 .picture img
 { display:none; }
 
+.float-helper
+{ float:right; height:calc(100% - 80px); }
+
 .title
-{ font:56px/52px 'Yantramanav', sans-serif; float:right; padding:0 0 0 10px; margin:0 !important; }
+{ font:56px/52px 'Yantramanav', sans-serif; float:right; padding:0 0 0 10px; clear:right; shape-outside:border-box; }
 
 .post
 { flex:none; overflow-y:scroll; width:400px; padding:20px 20px 0 20px; }

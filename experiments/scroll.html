@@ -1,0 +1,68 @@
+<html><head>
+
+<style>
+
+body
+{ margin:0; }
+
+.title {
+  float:right;
+  clear:right;
+  shape-outside:border-box;
+  width: 150px;
+  height: 30px;
+  background: tomato;
+}
+
+.float-helper
+{ float:right; height:calc(100% - 40px); }
+
+.wrapper
+{ }
+
+.post
+{ width:500px; display:inline-block; }
+
+.picture
+{ width:calc(100% - 600px); display:inline-block; }
+
+</style>
+
+</head>
+<body
+
+<div class="wrapper">
+
+<div class="picture">
+xxx
+</div>
+
+<div class="post">
+  <div class="float-helper">
+  </div>
+  <div class="title-container">
+    <div class="title">135</div>
+  </div>
+  <div>
+  This is tesxt. This is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxt This is tesxt. This is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxt This is tesxt. This is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxt This is tesxt. This is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxt This is tesxt. This is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxt This is tesxt. This is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxt This is tesxt. This is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxt This is tesxt. This is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxt This is tesxt. This is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxt This is tesxt. This is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxt This is tesxt. This is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxt This is tesxt. This is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxtThis is tesxt
+  </div>
+</div>
+
+</div>
+
+<script type="text/javascript">
+
+let titleContainer = document.querySelector('.title-container');
+let title = document.querySelector('.title');
+
+window.addEventListener('scroll', () => {
+	let cRect = titleContainer.getBoundingClientRect();
+  let distance = 0 - cRect.top;
+  title.style.marginTop = distance + 'px';
+})
+
+</script>
+
+
+
+</body></html>
