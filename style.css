@@ -61,7 +61,7 @@ a
   { display:none; }
 
   .title
-  { margin:0 !important; }
+  { margin:0 !important; height:60px; padding-left:10px; }
 
   .title-container
   { padding:10px 0 0 0; }

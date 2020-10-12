@@ -51,15 +51,14 @@ layout: compress
 
 <script type="text/javascript">
 
-let titleContainer = document.querySelector('.title-container');
-let title = document.querySelector('.title');
+  let titleContainer = document.querySelector('.title-container');
+  let title = document.querySelector('.title');
 
-window.addEventListener('scroll', () => {
-	let cRect = titleContainer.getBoundingClientRect();
-  let distance = 0 - cRect.top;
-  title.style.marginTop = distance + 'px';
-})
-
+  window.addEventListener('scroll', () => {
+  	let cRect = titleContainer.getBoundingClientRect();
+    let distance = 0 - cRect.top;
+    title.style.marginTop = distance + 'px';
+  })
 
 </script>
 
