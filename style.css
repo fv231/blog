@@ -1,17 +1,17 @@
 *
 { border:0; padding:0; margin:0; box-sizing:border-box; }
 
-html, body, .wrapper, .wrapper2
+html, body, .wrapper, .post
 { height:100%; }
 
 a
 { text-decoration:none; color:black; }
 
 .wrapper
-{ display:flex; font:22px/28px 'Alegreya', serif; }
+{ font:22px/28px 'Alegreya', serif; }
 
 .picture
-{ flex:auto; background-size:cover; background-position:center center; }
+{ float:left; position:fixed; height:100%; width:calc(100% - 450px); background-size:cover; background-position:center center; }
 
 .picture img
 { display:none; }
@@ -29,7 +29,7 @@ a
 { display:inline-block; height:50px; }
 
 .post
-{ flex:none; xoverflow-y:scroll; width:450px; padding:0px 20px 0 20px; }
+{ float:right; width:450px; padding:0px 20px 0 20px; }
 
 .post-content
 { margin:0 0 100px 0; }
