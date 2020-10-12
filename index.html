@@ -3,8 +3,11 @@ layout: default
 ---
 
 {% for post in site.posts limit:1 %}
+
+<div class="picture-wrapper">
 <div class="picture" style="background-image:url({{ site.baseurl }}/images/bg{{ post.title }}.jpg);">
   <img src="{{ site.baseurl }}/images/bg{{ post.title }}.jpg" />
+</div>
 </div>
 
 <div class="post">

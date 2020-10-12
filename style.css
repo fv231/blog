@@ -11,10 +11,19 @@ a
 { font:22px/28px 'Alegreya', serif; }
 
 .picture
-{ float:left; position:fixed; height:100%; width:calc(100% - 450px); background-size:cover; background-position:center center; }
+{ float:left; position:fixed; height:calc(100% - 40px); width:calc(100% - 470px); background-size:cover; background-position:center center; border:10px solid black; margin:20px; }
 
 .picture img
 { display:none; }
+
+.post
+{ float:right; width:450px; padding:0 20px; }
+
+.post-content
+{ margin:0 0 100px 0; }
+
+.post p
+{ margin:0 0 20px 0; }
 
 .float-helper
 { float:right; height:calc(100% - 80px); }
@@ -28,29 +37,32 @@ a
 .title a
 { display:inline-block; height:50px; }
 
-.post
-{ float:right; width:450px; padding:0px 20px 0 20px; }
-
-.post-content
-{ margin:0 0 100px 0; }
-
-.post p
-{ margin:0 0 20px 0; }
-
 @media only screen and (max-width:700px)
 {
-  .html, body, .wrapper, .wrapper2
+  .html, body, .wrapper, .post
   { height:auto; }
 
-  .wrapper2
-  { display:block; max-width:420px; margin:0 auto; }
+  .wrapper
+  { display:block; max-width:420px; margin:0 auto; padding:0 20px; }
 
   .post
-  { width:100%; overflow:visible; border-top:10px solid black; }
+  { float:none; padding:0 10px; width:100%; }
+
+  .post-content
+  { margin:10px 0 50px 0; }
 
   .picture
-  { border:none; }
+  { float:none; position:relative; width:100%; margin:20px 0 0; height:auto; }
 
   .picture img
-  { display:block; width:100%; }
+  { display:block; width:100%; xborder:10px solid white; }
+
+  .float-helper
+  { display:none; }
+
+  .title
+  { margin:0 !important; }
+
+  .title-container
+  { padding:10px 0 0 0; }
 }
