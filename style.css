@@ -8,13 +8,10 @@ a
 { text-decoration:none; color:black; }
 
 .wrapper
-{ border:10px solid white; }
-
-.wrapper2
-{ display:flex; font:22px/28px 'Alegreya', serif; border:10px solid black; }
+{ display:flex; font:22px/28px 'Alegreya', serif; }
 
 .picture
-{ flex:auto; background-size:cover; background-position:center center; border-right:10px solid black; }
+{ flex:auto; background-size:cover; background-position:center center; }
 
 .picture img
 { display:none; }
@@ -22,17 +19,23 @@ a
 .float-helper
 { float:right; height:calc(100% - 80px); }
 
+.title-container
+{ padding:20px 0 0 0; }
+
 .title
-{ font:56px/52px 'Yantramanav', sans-serif; float:right; padding:0 0 0 10px; clear:right; shape-outside:border-box; }
+{ font:56px/50px 'Yantramanav', sans-serif; float:right; padding:10px 0 0 20px; clear:right; shape-outside:border-box; height:70px; }
+
+.title a
+{ display:inline-block; height:50px; }
 
 .post
-{ flex:none; overflow-y:scroll; width:400px; padding:20px 20px 0 20px; }
+{ flex:none; xoverflow-y:scroll; width:450px; padding:0px 20px 0 20px; }
+
+.post-content
+{ margin:0 0 100px 0; }
 
 .post p
 { margin:0 0 20px 0; }
-
-.post::-webkit-scrollbar
-{ display:none; }
 
 @media only screen and (max-width:700px)
 {

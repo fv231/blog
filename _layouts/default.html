@@ -43,11 +43,11 @@ layout: compress
 
 <body>
 
-<div class="wrapper"><div class="wrapper2">
+<div class="wrapper">
 
   {{ content }}
 
-</div></div>
+</div>
 
 <script type="text/javascript">
 
@@ -57,8 +57,9 @@ let title = document.querySelector('.title');
 window.addEventListener('scroll', () => {
 	let cRect = titleContainer.getBoundingClientRect();
   let distance = 0 - cRect.top;
-  title.style.marginTop = distance + 'px !important';
+  title.style.marginTop = distance + 'px';
 })
+
 
 </script>
 
