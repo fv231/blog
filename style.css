@@ -1,7 +1,7 @@
 *
 { border:0; padding:0; margin:0; box-sizing:border-box; }
 
-html, body, .wrapper, .post
+html, body, .wrapper, .text
 { height:100%; }
 
 a
@@ -16,19 +16,13 @@ a
 .picture img
 { display:none; }
 
-.post
+.text
 { float:right; width:450px; padding:20px 20px 0; font:22px/28px 'Alegreya', serif; }
 
-.post-content
+.text p
 { padding:0 0 20px 0; }
 
-.post p
-{ margin:0 0 20px 0; }
-
-.post p:last-of-type
-{ margin:0; }
-
-.title
+.text .title
 { font:56px/56px 'Yantramanav', sans-serif; float:right; padding:0 0 0 20px; clear:right; }
 
 .nav
@@ -37,17 +31,11 @@ a
 
 @media only screen and (max-width:700px)
 {
-  .html, body, .wrapper, .post
+  .html, body, .wrapper, .text
   { height:auto; }
 
   .wrapper
   { display:block; max-width:420px; margin:0 auto; padding:0 20px; }
-
-  .post
-  { float:none; padding:10px 10px 0; width:100%; }
-
-  .post-content
-  { padding:10px 0 50px 0; }
 
   .picture
   { float:none; position:relative; width:100%; margin:20px 0 0; height:auto; }
@@ -55,6 +43,6 @@ a
   .picture img
   { display:block; width:100%; }
 
-  .title
-  { padding:10px 0 0 10px; }
+  .text
+  { float:none; padding:20px 10px 40px; width:100%; }
 }
