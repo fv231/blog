@@ -1,23 +1,23 @@
 *
-{ border:0; padding:0; margin:0; box-sizing:border-box; }
+{ border:0; padding:0; margin:0; xbox-sizing:border-box; }
 
-html, body, .wrapper, .text
+html, body, .wrapper
 { height:100%; }
 
 a
 { text-decoration:none; color:black; }
 
 .wrapper
-{  }
+{ display:flex; }
 
 .picture
-{ float:left; position:fixed; height:calc(100% - 40px); width:calc(100% - 470px); background-size:cover; background-position:center center; border:10px solid black; margin:20px; }
+{ flex:1 0 auto; background-size:cover; background-position:center center; border:10px solid black; margin:20px; }
 
 .picture img
 { display:none; }
 
 .text
-{ float:right; width:450px; padding:20px 20px 0; font:22px/28px 'Alegreya', serif; }
+{ width:430px; font:22px/28px 'Alegreya', serif; overflow:scroll; padding:20px 20px 0 0; }
 
 .text p
 { padding:0 0 20px 0; }
@@ -25,24 +25,18 @@ a
 .text .title
 { font:56px/56px 'Yantramanav', sans-serif; float:right; padding:0 0 0 20px; clear:right; }
 
-.nav
-{ font:56px/56px 'Yantramanav', sans-serif; display:none; }
-
 
 @media only screen and (max-width:700px)
 {
-  .html, body, .wrapper, .text
-  { height:auto; }
-
   .wrapper
-  { display:block; max-width:420px; margin:0 auto; padding:0 20px; }
+  { display:block; max-width:450px; margin:0 auto; padding:0 20px; }
 
   .picture
-  { float:none; position:relative; width:100%; margin:20px 0 0; height:auto; }
+  { margin:20px 0 0; }
 
   .picture img
   { display:block; width:100%; }
 
   .text
-  { float:none; padding:20px 10px 40px; width:100%; }
+  { padding:20px 10px 40px; }
 }
