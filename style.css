@@ -8,7 +8,7 @@ a
 { text-decoration:none; color:black; }
 
 .wrapper
-{ font:22px/28px 'Alegreya', serif; }
+{  }
 
 .picture
 { float:left; position:fixed; height:calc(100% - 40px); width:calc(100% - 470px); background-size:cover; background-position:center center; border:10px solid black; margin:20px; }
@@ -17,7 +17,7 @@ a
 { display:none; }
 
 .post
-{ float:right; width:450px; padding:0 20px; }
+{ float:right; width:450px; padding:20px 20px 0; font:22px/28px 'Alegreya', serif; }
 
 .post-content
 { padding:0 0 20px 0; }
@@ -28,14 +28,12 @@ a
 .post p:last-of-type
 { margin:0; }
 
-.title-container
-{ padding:20px 0 0 0; }
-
 .title
-{ font:56px/50px 'Yantramanav', sans-serif; float:right; padding:10px 0 0 20px; clear:right; shape-outside:border-box; height:70px; }
+{ font:56px/56px 'Yantramanav', sans-serif; float:right; padding:0 0 0 20px; clear:right; }
 
-.title a
-{ display:inline-block; height:50px; }
+.nav
+{ font:56px/56px 'Yantramanav', sans-serif; display:none; }
+
 
 @media only screen and (max-width:700px)
 {
@@ -46,23 +44,17 @@ a
   { display:block; max-width:420px; margin:0 auto; padding:0 20px; }
 
   .post
-  { float:none; padding:0 10px; width:100%; }
+  { float:none; padding:10px 10px 0; width:100%; }
 
   .post-content
-  { margin:10px 0 50px 0; }
+  { padding:10px 0 50px 0; }
 
   .picture
   { float:none; position:relative; width:100%; margin:20px 0 0; height:auto; }
 
   .picture img
-  { display:block; width:100%; xborder:10px solid white; }
-
-  .float-helper
-  { display:none; }
+  { display:block; width:100%; }
 
   .title
-  { margin:0 !important; height:60px; padding-left:10px; }
-
-  .title-container
-  { padding:10px 0 0 0; }
+  { padding:10px 0 0 10px; }
 }
