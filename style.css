@@ -20,13 +20,13 @@ a
 { float:right; width:450px; padding:0 20px; }
 
 .post-content
-{ margin:0 0 100px 0; }
+{ padding:0 0 20px 0; }
 
 .post p
 { margin:0 0 20px 0; }
 
-.float-helper
-{ float:right; height:calc(100% - 80px); }
+.post p:last-of-type
+{ margin:0; }
 
 .title-container
 { padding:20px 0 0 0; }

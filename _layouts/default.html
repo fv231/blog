@@ -8,17 +8,15 @@ layout: compress
 
 <head>
 
-<meta charset="utf-8" />
 <title>withrye</title>
+<meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="/style.css" />
 <link rel="shortcut icon" href="/images/gomez.ico">
 <link rel="icon" href="/images/gomez.gif">
-
 <link href="https://fonts.googleapis.com/css?family=Alegreya%7CYantramanav:900" rel="stylesheet">
 
 <script>
-
   function randomLink(randomLinkId) {
     if (randomLinkId.addEventListener) {
       randomLinkId.addEventListener('click', function(evt) {
@@ -36,7 +34,6 @@ layout: compress
   window.onload = function() {
     randomLink(document.getElementById('random'));
   }
-
 </script>
 
 </head>
@@ -44,23 +41,8 @@ layout: compress
 <body>
 
 <div class="wrapper">
-
   {{ content }}
-
 </div>
-
-<script type="text/javascript">
-
-  let titleContainer = document.querySelector('.title-container');
-  let title = document.querySelector('.title');
-
-  window.addEventListener('scroll', () => {
-  	let cRect = titleContainer.getBoundingClientRect();
-    let distance = 0 - cRect.top;
-    title.style.marginTop = distance + 'px';
-  })
-
-</script>
 
 </body>
 
