@@ -9,10 +9,21 @@ layout: default
 </div>
 
 <div class="text">
+
   <p class="title" id="random">
-    <a href="/?" title="?">{{ post.title }}.</a>
+    <a href="/?" title="???">{{ post.title }}.</a>
   </p>
+
   {{ post.content }}
+
+  <div class="footer">
+    <p><a href="{{post.previous.url}}">Previous</a></p>
+    <p><a href="/1">First</a></p>
+    <p><a href="/?" id="random2">Random</a></p>
+    <p><a href="/">Home</a></p>
+    <p><a href="mailto:heysup@withrye.com">heysup@<br>withrye.com</a></p>
+  </div>
+
 </div>
 
 {% endfor %}

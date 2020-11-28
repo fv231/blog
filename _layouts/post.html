@@ -7,8 +7,33 @@ layout: default
 </div>
 
 <div class="text">
+
   <p class="title" id="random">
-    <a href="/?" title="?">{{ page.title }}.</a>
+    <a href="/?" title="???">{{ page.title }}.</a>
   </p>
+
   {{ content }}
+
+  <div class="footer">
+    {% if page.previous %}
+      <p><a href="{{page.previous.url}}">Previous</a></p>
+    {% endif %}
+
+    {% if page.next %}
+      <p><a href="{{page.next.url}}">Next</a></p>
+    {% endif %}
+
+    {% if page.previous %}
+      <p><a href="{{site.posts.last.url}}">First</a></p>
+    {% endif %}
+
+    {% if page.next %}
+      <p><a href="/">Latest</a></p>
+    {% endif %}
+
+    <p><a href="/?" id="random2">Random</a></p>
+    <p><a href="/">Home</a></p>
+    <p><a href="mailto:heysup@withrye.com">heysup@<br>withrye.com</a></p>
+  </div>
+
 </div>
