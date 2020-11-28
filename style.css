@@ -29,7 +29,7 @@ a
 { font:56px/56px 'Yantramanav', sans-serif; float:right; padding:0 0 0 20px; clear:right; }
 
 .text .title a
-{ display:inline-block; }
+{ display:inline-block; height:56px; }
 
 
 @media only screen and (max-width:700px)
@@ -46,6 +46,6 @@ a
   .text
   { width:100%; padding:20px 10px 30px; }
 
-  .text .title
-  { font-size:50px; line-height:50px; }
+  /* .text .title
+  { font-size:50px; line-height:50px; } */
 }
