@@ -17,13 +17,19 @@ a
 { display:none; }
 
 .text
-{ width:430px; font:22px/28px 'Alegreya', serif; overflow:scroll; padding:20px 20px 0 0; }
+{ width:430px; font:22px/28px 'Alegreya', serif; overflow:scroll; padding:30px 30px 0 0; }
 
 .text p
 { padding:0 0 20px 0; }
 
+.text p:last-of-type
+{ padding:0 0 30px 0; }
+
 .text .title
 { font:56px/56px 'Yantramanav', sans-serif; float:right; padding:0 0 0 20px; clear:right; }
+
+.text .title a
+{ display:inline-block; }
 
 
 @media only screen and (max-width:700px)
@@ -38,5 +44,5 @@ a
   { display:block; width:100%; }
 
   .text
-  { width:100%; padding:20px 10px 40px; }
+  { width:100%; padding:20px 10px 30px; }
 }
