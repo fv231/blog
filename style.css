@@ -45,4 +45,7 @@ a
 
   .text
   { width:100%; padding:20px 10px 30px; }
+
+  .text .title
+  { font-size:50px; line-height:50px; }
 }
